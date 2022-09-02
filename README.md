@@ -14,9 +14,12 @@
 
 ## Como planejo organizar as pastas:
 
-Primeiramente, cada tipo de arquivo será organizado em pastas - Dessa forma, não teremos que lidar com arquivos de CSS junto com HTML, imagens perdidas juntas com scripts, etc.
+Cada tipo de arquivo será organizado em pastas - Dessa forma, não teremos que lidar com arquivos de CSS junto com HTML, imagens perdidas juntas com scripts, etc.
+
 É só a forma como iremos organizar.
 
-Se for necessário criar mais uma categoria, pode criar, mas tente seguir o padrão das outras.
+
+No momento algumas categorias estão faltando (banco de dados, css, etc.), nesse caso vocês podem criar uma pasta nova assim que for necessário.
+
 
 Em caso de dúvidas não hesite em consultar algum colaborador do repositório.
