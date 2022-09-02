@@ -10,7 +10,7 @@
 
 **html -** Meio óbvio, mas todo documento HTML vem aqui.
 
-'adicione mais descrições conforme vai criando pastas'
+`--adicione mais descrições conforme vai criando pastas--`
 
 ## Como planejo organizar as pastas:
 
