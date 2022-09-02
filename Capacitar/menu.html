@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- FORMULÁRIO -->
+    <form action="#" method="post">
+
+        <div class="perfil">
+
+            <!-- Nome -->
+            <div class='dados' id='nome'>
+
+                <label for="nome">Nome:</label>
+                <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
+                <span class="ast-obrigatorio">*</span>
+                <input name="nome" type="text" required
+                >
+            </div>
+
+            <!-- E-mail -->
+            <div class='email' id='email'>
+
+                <label for='email'>E-mail:</label>
+                <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
+                <span class="ast-obrigatorio">*</span>
+                <input name='email' type='text' required>
+                
+            </div>
+
+
+            <!-- Telefone -->
+            <div class='dados' id='telefone'>
+                <label for="telefone">Telefone:</label>
+                <input name="telefone" width='15' type="text">
+            </div>
+
+
+
+            <!-- Foto -->
+            <div class='dados' id='foto'>
+
+                <label for="foto">Foto:</label>
+                <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
+                <span class="ast-obrigatorio">*</span>
+                <input name="foto" type="file" accept=".jpg, .png, .jpeg, .jfif" required>
+
+            </div>
+
+
+
+            <!-- Gênero -->
+            <div class='dados' id='genero'>
+
+                <label for="genero">Gênero:</label>
+                <input type='radio' name='genero' value='masculino'>Masculino
+                <input type='radio' name='genero' value='feminino'>Feminino
+                <input type='radio' name='genero' onclick="" value='outro'>Outro
+
+            </div>
+
+
+
+            <!-- Data -->
+            <div class='dados' id='data'>
+
+                <label for="data">Data:</label>
+                <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
+                <span class="ast-obrigatorio">*</span>
+                <input name="data" type="date" required>
+
+            </div>
+
+
+
+            <!-- Localidade -->
+            <div class='dados' id='localidade'>
+                <label for="Localidade">Localidade:</label>
+                <input name="localidade" type="text">
+            </div>
+
+
+
+            <!-- Experiência -->
+            <div class='dados' id='experiencia'>
+                <label for="experiencia">Experiência Profissional:</label>
+                <input name="experiencia" type="text">
+                <button type="button" onclick="novoInput(document.getElementById('experiencia'),'experiencia')">+</button>
+            </div>
+
+
+
+            <!-- Instituição -->
+            <div class='dados' id='instituicao'>
+                <label for="instituicao">Instituição:</label>
+                <input id="instituicao" name="instituicao" type="text">
+            </div>
+            
+            <input type="submit" value="Aplicar">
+        </div>
+
+    </form>
+</body>
+
+<script src="script/novoCampo.js"></script>
+
+<style>.ast-obrigatorio {color: red;}</style>
+
+</html>
