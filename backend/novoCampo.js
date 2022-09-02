@@ -1,6 +1,7 @@
 id = 0
-function novoInput(pai,nomepai){
+function novoInput(pai, nomepai) {
 
+    globalThis.id += 1
     // Criando um id único para cada elemento
     idAtual = globalThis.id
 
@@ -8,16 +9,21 @@ function novoInput(pai,nomepai){
     div = newElement('div')
     div.id = idAtual
 
+    botaoAdd = document.getElementById("botaoAdicionar")
+
+
     // Caixa de texto
     caixa = newElement('input')
-    caixa.setAttribute("class",`${nomepai}`)
+    caixa.setAttribute("class", `${nomepai}`)
     caixa.type = "text"
+    caixa.required = true
 
     // Botão para apagar o div 
     botaoDelete = newElement('button')
     botaoDelete.innerHTML = "-"
     botaoDelete.type = "button"
     botaoDelete.id = idAtual
+    botaoDelete.setAttribute("class", "botao")
     botaoDelete.onclick = function () { removeElement(pai, document.getElementById(this.id)); }
 
     // Elemento para quebra de linha 
@@ -25,11 +31,13 @@ function novoInput(pai,nomepai){
 
     // Atribuindo o div a um pai, e atribuindo os outros elementos a esse div 
     pai.appendChild(div)
-        div.appendChild(caixa)
-        div.appendChild(botaoDelete)
+    div.appendChild(caixa)
+    div.appendChild(botaoDelete)
 
-
-    globalThis.id += 1
+    // Desabilitar botão de adicionar
+    if (idAtual >= 2) {
+        botaoAdd.disabled = true;
+    }
 }
 
 // Criar novo elemento
@@ -39,6 +47,16 @@ function newElement(elementType) {
 }
 
 // Apagar elemento
-function removeElement(pai,element){
+function removeElement(pai, element) {
+    
+    botaoAdd = document.getElementById("botaoAdicionar")
+
     pai.removeChild(element)
+    
+    globalThis.id -= 1
+
+    // Reabilitar botão de adicionar
+    if(globalThis.id <= 2){
+        botaoAdd.disabled = false;
+    }
 }
