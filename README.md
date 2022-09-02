@@ -3,8 +3,11 @@
 ## Tipos de pastas
 
 **assets -** Imagens, sons ou ícones vem aqui.
+
 **fontes -** Fontes (como Montserrat) vem aqui.
+
 **backend -** JavaScript, PHP, ou outros que sejam relacionados à lógica do site.
+
 **html -** Meio óbvio, mas todo documento HTML vem aqui.
 
 ## Como planejo organizar as pastas:
