@@ -1,0 +1,158 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fonte/Montserrat-VariableFont_wght.ttf);
+
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* adicionando imagem de fundo */
+    margin: 0;
+    
+    background-image: linear-gradient(to bottom, transparent 0%, #504f4faa 0%), url(../imagem/HotelBelaVista.jpg);
+
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+#overlay {
+    background-color: rgba(95, 95, 95, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+#cartao {
+
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px 1px #0000007b;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    height: 80vh;
+    padding: 5vh;
+    border-radius: 15px;
+
+}
+
+#input-e-mail {
+    width: 89%;
+    height: 5%;
+    left: 3%;
+    position: fixed;
+    border:0;
+    border-bottom: 1px solid #000;
+
+    display:inline-block;
+    margin-top: 35vh;
+    background-color: transparent;
+    padding: 2vh;
+    outline: none;
+   
+  
+    font-size: 1.5vh;
+}
+#input-e-mail::placeholder{
+    border-color: blue;
+}
+
+button, #confirmar {
+    position: absolute;
+    left: 25%;
+
+    background-color: rgba(41, 41, 68, 1);
+    border-radius: 100px;
+    margin-top: 45vh;
+    border: none;
+    padding: 2vh;
+    width: 50%;
+    color: white;
+    font-size: 1.5vh;
+}
+#confirmar{
+    background-color: #292944;
+}
+
+#confirmar:hover {
+    
+    background-color: #292944;
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DO HEADER NO MEIO */
+    padding: 1vh;
+    width: 100%;
+    background-color: #292944;
+}
+
+
+header a:hover{
+    transition: 0.6;
+    color:white;
+
+}
+
+header img {
+    height: 19%;
+    width: 14%;
+    object-fit: fill;
+}
+
+
+a {
+    color: #292944;
+}
+#campo-01{
+    position: absolute;
+    padding: 1.5vh;
+    left: 10%;
+    top:20%;
+    font-size: 15px;
+    
+}
+#logo-campo{
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    top: 0%;
+    margin: 0;
+    position:fixed;
+}
+
+a,#contato{
+    text-decoration: none;
+    font-size: 1.5vh;
+    position:absolute;
+    margin-top: 6vh;
+    left: 22%;
+    top: 70%;
+}
+
+#contato:hover{
+    transition: 0.1;
+    color: gray;
+    cursor: pointer;
+}
