@@ -6,6 +6,8 @@
 
 **fontes -** Fontes (como Montserrat) vem aqui.
 
+DAVI VIADÃO
+
 **frontend -** Estilização dos sites (CSS)
 
 **backend -** JavaScript, PHP, ou outros que sejam relacionados à lógica do site.
