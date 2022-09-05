@@ -1,7 +1,7 @@
 function a(){console.log(document.querySelectorAll("input.experiencia"))}
 
 class curriculo {
-    constructor(nome,email,telefone,genero,data,local,experiencia,instituicao){
+    constructor(){
         let nome = null
         let email = null
         let telefone = null
@@ -12,10 +12,20 @@ class curriculo {
         let instituicao = null
     }
     
-    construirCurriculo() {
-        a = document.querySelectorAll("input.experiencia");
-        a.forEach();
+}
 
-        alert(a);
-    }
+// Coletará os dados inseridos nos campos
+// Retornará array
+function coletarDados(campo) {
+
+    campo = coletarDados(document.querySelectorAll("input.experiencia"))
+    dados = []
+
+    for (let i = 0; i < campo.length; i++) {
+        const element = campo[i];
+        campo = document.querySelectorAll(campo);
+        dados.append(campo[element].value)
+    };
+
+    alert(dados);
 }
