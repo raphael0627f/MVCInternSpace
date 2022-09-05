@@ -1,3 +1,28 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url("../fontes/Montserrat-VariableFont_wght.ttf");
+
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* adicionando imagem de fundo */
+    margin: 0;
+    
+    background-color: #f1f2ea;
+    
+}
+
 #cartao {
 
     box-sizing: border-box;
@@ -7,8 +32,8 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vh;
-    height: 70vh;
+    width: 150vh;
+    height: 80vh;
     padding: 5vh;
     border-radius: 15px;
 
@@ -30,16 +55,14 @@ header a {
     position: absolute;
     float: right ;
     font-size: 15px;
+    right: 100px;
 
 }
-
-
 header a:hover{
     transition: 0.6;
     color:white;
 
 }
-
 
 header img {
     height: 19%;
@@ -56,24 +79,24 @@ a {
     position:absolute;
     right: 3vh;
 }
-
 #combox-setor{
-position:fixed;
-left: 2.5vh;
-top:55%;
+    position:fixed;
+    left: 4.5vh;
+    top:55%;
+    width: 20vh;
 
 }
-
 #combox-periodo{
     position:fixed;
     left: 4.5vh;
     top:35%;
+    width: 20vh;
 
 }
 #setor{
     position:fixed;
     font-size: x-large;
-    right: 83.0vh;
+    left: 3%;
     top:48%;
 }
 
@@ -86,10 +109,6 @@ top:55%;
 #periodo{
     position:fixed;
     font-size: x-large;
-    right: 83.0vh;
+    left: 3%;
     top:28%;
 }
-
-
-
-
