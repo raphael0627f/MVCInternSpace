@@ -1,31 +1,3 @@
-@font-face { /* Adicionando a fonte Montserrat */
-    font-family: Montserrat;
-    src: url("../fontes/Montserrat-VariableFont_wght.ttf");
-
-}
-
-
-* {
-
-    font-family: 'Montserrat';
-
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    /* adicionando imagem de fundo */
-    margin: 0;
-    
-    background-image: linear-gradient(to bottom, transparent 0%, #504f4faa 0%), url("../assets/HotelBelaVista.jpg");
-
-    background-size: cover;
-    
-    background-repeat: no-repeat;
-    
-}
 
 #login-h1{
     font-size: 3vh;
