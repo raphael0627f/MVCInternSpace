@@ -6,6 +6,8 @@
 
 **fontes -** Fontes (como Montserrat) vem aqui.
 
+**frontend -** Estilização dos sites (CSS)
+
 **backend -** JavaScript, PHP, ou outros que sejam relacionados à lógica do site.
 
 **html -** Meio óbvio, mas todo documento HTML vem aqui.
