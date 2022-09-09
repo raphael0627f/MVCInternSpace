@@ -16,6 +16,7 @@ function novoInput(pai, nomepai) {
     caixa = newElement('input')
     caixa.setAttribute("class", `${nomepai}`)
     caixa.type = "text"
+    caixa.setAttribute("placeholder","Experiência profissional")
     caixa.required = true
 
     // Botão para apagar o div 
