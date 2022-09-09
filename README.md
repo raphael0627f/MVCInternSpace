@@ -8,7 +8,7 @@
 
 **frontend -** Estilização dos sites (CSS)
 
-GABRIEL FLORESTA 
+
 
 **backend -** JavaScript, PHP, ou outros que sejam relacionados à lógica do site.
 
