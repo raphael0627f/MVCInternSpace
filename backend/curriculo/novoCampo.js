@@ -1,5 +1,5 @@
 id = 0
-function novoInput(pai, nomepai) {
+function novoInput(pai, nomepai, placeholder) {
 
     globalThis.id += 1
     // Criando um id único para cada elemento
@@ -16,7 +16,7 @@ function novoInput(pai, nomepai) {
     caixa = newElement('input')
     caixa.setAttribute("class", `${nomepai}`)
     caixa.type = "text"
-    caixa.setAttribute("placeholder","Experiência profissional")
+    caixa.setAttribute("placeholder",placeholder)
     caixa.required = true
 
     // Botão para apagar o div 
