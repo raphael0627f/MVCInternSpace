@@ -63,14 +63,15 @@ function coletarDados(target, tipoSelector) {
 
         // Adicionando os valores ao array de valores
         objeto.forEach(element => {
-
+            console.log(element)
             // Adicionando somente se houver algum valor
             if (element.value != "" && element.value != null) {
 
                 allNull = false
+                console.log(element.value)
                 valor.push(element.value)
 
-            }else if(allNull = true){
+            }else if(allNull == true){
                     valor = null
                 }
 
