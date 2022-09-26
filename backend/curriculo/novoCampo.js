@@ -1,5 +1,5 @@
 id = 0
-function novoInput(pai, nomepai, placeholder) {
+function novoInput(pai, nomepai, placeholder,limite) {
 
     globalThis.id += 1
     // Criando um id único para cada elemento
@@ -36,7 +36,7 @@ function novoInput(pai, nomepai, placeholder) {
     div.appendChild(botaoDelete)
 
     // Desabilitar botão de adicionar
-    if (idAtual >= 2) {
+    if (idAtual >= limite) {
         botaoAdd.disabled = true;
     }
 }
