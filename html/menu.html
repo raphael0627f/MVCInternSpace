@@ -8,7 +8,7 @@
 
 <body>
     <!-- FORMULÁRIO -->
-    <form action="#" method="post">
+    <form action="../database/salvar_aluno.php" method="POST">
 
         <div class="infobasica">
 
@@ -84,9 +84,9 @@
 
 
             <!-- Localidade -->
-            <div class='dados' id='localidade'>
-                <label for="localizacao">Localização:</label>
-                <input name="localizacao" class="localizacao" placeholder="Cidade ou Estado" type="text">
+            <div class='dados' id='endereco'>
+                <label for="endereco">Endereço:</label>
+                <input name="endereco" class="endereco" placeholder="Endereço" type="text">
             </div>
 
         </div>
@@ -97,7 +97,7 @@
             <input name="experiencia" class="experiencia" placeholder="Experiência profissional" type="text">
             
             <button type="button" id="botaoAdicionar" class="botao"
-                onclick="novoInput(document.getElementById('experiencia'),'experiencia','Experiência profissional')">+</button>
+                onclick="novoInput(document.getElementById('experiencia'),'experiencia','Experiência profissional',2)">+</button>
         </div>
 
 
@@ -108,15 +108,21 @@
             <input id="instituicao" class="instituicao" name="instituicao" type="text">
         </div>
 
-        <button type="button" onclick="construirCurriculo()"></button>
         <input type="submit" value="Aplicar">
 
+        <!-- Idioma(s) -->
+        <div class='dados' id='idioma'>
+            <label for="idioma">Experiência Profissional:</label>
+            <input name="idioma" class="idioma" placeholder="Idioma" type="text">
+            
+            <button type="button" id="botaoAdicionar" class="botao"
+                onclick="novoInput(document.getElementById('idioma'),'idioma','Idioma',2)">+</button>
+        </div>
 
     </form>
 </body>
 
 <script src="../backend/curriculo/novoCampo.js"></script>
-<script src="../backend/curriculo/d.js"></script>
 <script src="../backend/curriculo/removerFoto.js"></script>
 
 
