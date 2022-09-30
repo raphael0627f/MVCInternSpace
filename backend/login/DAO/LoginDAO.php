@@ -1,22 +1,19 @@
 <?php
 
-class AgendamentoDAO {
+class loginDAO { 
 
-    function adicionarAgendamento(ModelAgendamento $agendamento){
-        $idAluno = $agendamento->getIdAluno();
-        $nomeAluno = $agendamento->getNomeAluno();
-        $setor = $agendamento->getSetor();
-        $dataAgendamento = $agendamento->getDataAgendamento();
-        $statusAgendamento = $agendamento->getStatusAgendamento();
+    function adicionarLogin(ModelLogin $login){
+     $user = $login->getIdUsuario();
+     $email= $login->getEmail();
+     $senha = $login->getSenha();
 
-        include_once("../conexao/config.php");
-        $stmt = $conn->prepare("INSERT INTO tb_agendamentos (idAluno, nomeAluno, setor, dataAgendamento, statusAgendamento) VALUES (:idAluno, :nomeAluno, :setor, :dataAgendamento, :statusAgendamento)");
-        $stmt->bindParam(':idAluno',$idAluno);
-        $stmt->bindParam(':nomeAluno',$nomeAluno);
-        $stmt->bindParam(':setor',$setor);
-        $stmt->bindParam(':dataAgendamento',$dataAgendamento);
-        $stmt->bindParam(':statusAgendamento',$statusAgendamento);    
+        include_once("../../database/config.php");
+        $stmt = $conn->prepare("INSERT INTO tb_login (idUsuario ,email, senha) VALUES (:idUsuario, :email, :senha)");
+        $stmt->bindParam(':idUsuario',$user);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':senha',$senha);
         $stmt->execute();
+        
 
         if($stmt == true){
             echo "Dados inseridos!";
