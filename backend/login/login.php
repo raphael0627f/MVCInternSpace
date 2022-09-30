@@ -1,20 +1,15 @@
 <?php
-include_once('../../database/config.php');
+include("../login/DAO/LoginDAO.php");
+include_once("../login/Model/ModelLogin.php");
 
-$email=$_POST['email'];
-$senha=$_POST['senha'];
-$user = 2;
+$login = new loginDAO();
+$Modellogin = new ModelLogin();
 
-$stmt = $conn->prepare("INSERT INTO tb_login (idUsuario ,email, senha) VALUES (:idUsuario, :email, :senha)");
-$stmt->bindParam(':idUsuario',$user);
-$stmt->bindParam(':email', $email);
-$stmt->bindParam(':senha',$senha);
-$stmt->execute();
+$Modellogin->setIdUsuario($_POST['email']);
 
-var_dump($user);
-if($stmt == true){
-    echo "Dados inseridos!";
-}
+
+
+
 
 
 ?>
