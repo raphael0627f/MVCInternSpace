@@ -1,7 +1,7 @@
 <?php
 
 class ModelLogin{
-    private $id;
+    private $id; 
     private $idUsuario;
     private $email;
     private $senha;
