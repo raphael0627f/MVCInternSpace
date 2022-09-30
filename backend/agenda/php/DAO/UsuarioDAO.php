@@ -11,9 +11,7 @@ function adicionarUsuario(
     $telefone,
     $email,
     $sexo,
-    $experiencia1,
-    $experiencia2,
-    $experiencia3,
+    $experiencia,
     $instituicao,
     $cargo,
     $periodo,
@@ -32,9 +30,7 @@ function adicionarUsuario(
                 :telefone,
                 :email,
                 :sexo,
-                :experiencia1,
-                :experiencia2,
-                :experiencia3,
+                :experiencia,
                 :instituicao,
                 :cargo,
                 :periodo,
@@ -54,9 +50,7 @@ function adicionarUsuario(
         $stmt-> bindParam(':telefone', $telefone);
         $stmt-> bindParam(':email', $email);
         $stmt-> bindParam(':sexo', $sexo);
-        $stmt-> bindParam(':experiencia1', $experiencia1);
-        $stmt-> bindParam(':experiencia2', $experiencia2);
-        $stmt-> bindParam(':experiencia3', $experiencia3);
+        $stmt-> bindParam(':experiencia', $experiencia1);
         $stmt-> bindParam(':instituicao', $instituicao);
         $stmt-> bindParam(':cargo', $cargo);
         $stmt-> bindParam(':periodo', $periodo);
