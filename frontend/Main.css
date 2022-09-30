@@ -1,0 +1,102 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* adicionando imagem de fundo */
+    margin: 0;
+    
+    background-color: #f1f2ea;
+    
+}
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DO HEADER NO MEIO */
+    padding: 1vh;
+    width: 100%;
+    background-color: #292944;
+}
+
+header a {
+
+    color: #edb700;
+    text-decoration: none;
+    position: fixed;
+    right: 3vh;
+    font-size: 2vh;
+
+}
+header a:hover{
+    transition: 0.6;
+    color:white;
+
+}
+
+header img {
+    height: 19%;
+    width: 14%;
+    object-fit: fill;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+#informacoes_basicas {
+    margin-left: 35vh;
+    display: flex;
+    margin-top: 15vh;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    position: absolute;
+    padding: 4vh;
+    border-radius: 25px;
+    
+}
+
+#image-conteiner {
+    margin-right: 5vh;
+}
+#direita {
+    margin-right: 5vh;
+}
+#negrito_nome {
+    font-weight: bold;
+    font-size: 3vh;
+    color: #292944;
+}
+#negrito {
+    font-weight: bold;
+    color: #292944;
+}
+
+#relatorio {
+    margin-left: 35vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60vh;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    position: absolute;
+    padding: 4vh;
+    border-radius: 25px;
+}
+table { border-collapse: collapse;}
+th, td { border: none; padding: 0; }
+td:first-child { width: 200px  }
+td:first-child + td + td {  width: 120px }
