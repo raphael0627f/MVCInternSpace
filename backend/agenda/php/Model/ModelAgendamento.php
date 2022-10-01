@@ -1,12 +1,11 @@
 <?php
 
-class modelAgendamento {
+class ModelAgendamento {
 
     private $id;
     private $idAluno;
     private $nomeAluno;
     private $setor;
-    private $horario;
     private $dataAgendamento;
   
     function getId() {
@@ -25,12 +24,12 @@ class modelAgendamento {
         return $this->setor;
     }
 
-    function getHorario() {
-        return $this->horario;
-    }
-
     function getDataAgendamento() {
         return $this->dataAgendamento;
+    }
+
+    function getStatusAgendamento() {
+        return $this->StatusAgendamento;
     }
 
     function setId($id) {
@@ -49,13 +48,14 @@ class modelAgendamento {
         $this->setor = $setor;
     }
 
-    function setHorario($horario) {
-        $this->horario = $horario;
-    }
-
     function setDataAgendamento($dataAgendamento) {
         $this->dataAgendamento = $dataAgendamento;
     }
+
+    function setStatusAgendamento($StatusAgendamento) {
+        $this->StatusAgendamento = $StatusAgendamento;
+    }
+
 
 
 
