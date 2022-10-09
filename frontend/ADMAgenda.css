@@ -83,7 +83,8 @@ a {
 #text-span {
     color: #292944;
     font-size: xx-large;
-    left: 3%;
+    top: 1%;
+    left: 2%;
     position: fixed;
 }
 
