@@ -56,7 +56,6 @@ $results = $stmt->fetchAll(PDO::FETCH_OBJ);
                 </tr>
             <?php } ?>
             </tbody>
-    </div>
     </table>
     </div>
     </div>
