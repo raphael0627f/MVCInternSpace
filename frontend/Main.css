@@ -4,6 +4,12 @@
 
 }
 
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+
+}
+
 
 * {
 
@@ -150,12 +156,7 @@ main {
 
 
 
-#imagem-usuario{
-    position:fixed;
-    top:100%;
-    padding: 1.5vh;
-    left: 10%;
-}
+
 
 input[type='file']{
     display: grid;
@@ -164,6 +165,7 @@ input[type='file']{
 #imgPhoto{
     position: relative;
     left: 1%;
+    top: -1.5vh;
     width: 25vh;
     object-fit: cover;
     height: 25vh;
@@ -197,4 +199,18 @@ footer {
 }
 #contanier-footer{
 margin-left: 150vh;
+}
+#img-edit{
+position: absolute;
+width: 2.2rem;
+height: 2.2rem;
+left: 75%;
+margin-top: -1.5vh;
+margin-left: 19vh;
+}
+#img-edit:hover{
+    background-color: grey;
+    color: white;
+    border-radius:50% 6px; 
+     
 }
