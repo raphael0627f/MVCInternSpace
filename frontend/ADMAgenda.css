@@ -88,14 +88,49 @@ a {
     position: fixed;
 }
 
-#bodyTB{
-    overflow-y: auto;
+#table::-webkit-scrollbar{
+    width: 12px;
+}
+
+#table::-webkit-scrollbar-thumb{
+    background-color: #3131356c;
+    border-radius: 6vh;
+}
+
+#table{
+    overflow-y: scroll;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150vh;
     height: 60vh;
-    border-radius: 15px;
 
 }
+
+#tabela thead tr {
+    position: sticky;
+    top: -1%;
+  }
+
+#tabela th{
+    text-align: center;
+    
+}
+#tabela th:first-child {
+    width: 5%;
+}
+
+#tabela th:nth-child(4) {
+    width: 10%;
+}
+
+#tabela th:nth-child(3) {
+    width: 15%;
+}
+
+#tabela th:last-child {
+    width: 20%;
+}
+
+
