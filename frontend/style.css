@@ -16,9 +16,49 @@ html {
 }
 
 body {
-    /* adicionando imagem de fundo */
-    margin: 0;
     
+    margin: 0;
     background-color: #f1f2ea;
     
+}
+
+  /******************************/
+ /*          HEADER            */
+/******************************/
+
+header {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DO HEADER NO MEIO */
+    padding: 1vh;
+    width: 100%;
+    background-color: #292944;
+}
+
+header a {
+
+    color: #edb700;
+    text-decoration: none;
+    position: fixed;
+    right: 3vh;
+    font-size: 2vh;
+
+}
+header a:hover{
+    transition: 0.6;
+    color:white;
+
+}
+
+header img {
+    height: 19%;
+    width: 14%;
+    object-fit: fill;
+}
+
+
+a {
+    color: #292944;
 }
