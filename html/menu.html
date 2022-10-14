@@ -24,7 +24,7 @@
 
 
 
-            <div class="foto_container">
+            <table>
                 <!-- Foto -->
                 <div class='dados' id='foto'>
 
@@ -35,11 +35,9 @@
                     <!-- <button type="button" class="botao" onclick="apagarValor('foto')" id="removerFoto">Remover</button> -->
 
                 </div>
-            </div>
 
 
 
-            <div class="infobasica">
                 <!-- Nome -->
                 <div class='dados' id='nome'>
 
@@ -81,7 +79,7 @@
                     <input type='radio' name='genero' class='genero' value='masculino'>Masculino
                     <input type='radio' name='genero' class='genero' value='feminino'>Feminino
                     <input type='radio' name='genero' class='genero' onclick="" value='outro'>Outro
-                    <button type='button' class="buttonPadrao" onclick='limparSelecao("input.genero")'>Limpar
+                    <button type='button' class="btnSecundario" onclick='limparSelecao("input.genero")'>Limpar
                         Seleção</button>
 
                 </div>
@@ -106,7 +104,6 @@
                     <input name="endereco" class="endereco" placeholder="Endereço" type="text">
                 </div>
 
-            </div>
 
 
 
@@ -138,10 +135,10 @@
                     onclick="novoInput(document.getElementById('idioma'),'idioma','Idioma',2)">+</button>
             </div>
 
+            
 
-
-            <input type="submit" value="Aplicar">
-
+            <input type="submit" class="btnPrimario" value="Aplicar">
+            </table>
     </div>
     </form>
 </body>
