@@ -5,16 +5,23 @@
     <meta charset='UTF-8'>
     <title>Currículo do Usuário</title>
     <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
+    <link href="../frontend/style.css" rel="stylesheet">
+    <link href="../frontend/menu.css" rel="stylesheet">
 </head>
 
 <body>
+
+
+    <div id="cartao">
     <!-- FORMULÁRIO -->
     <form action="../database/salvar_aluno.php" method="POST">
-
+        
         <div class="infobasica">
 
             <h1>Editar Dados</h1>
+        
 
+    
             <!-- Foto -->
             <div class='dados' id='foto'>
 
@@ -29,7 +36,7 @@
 
 
             <!-- Nome -->
-            <div class='dados' id='nome'>
+            <div class='dados' id='Camponome'>
 
                 <label for="nome">Nome:</label>
                 <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
@@ -38,9 +45,9 @@
             </div>
 
 
-
+            <!-- POR QUE CRIAR UMA CLASSE PRA EMAILKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK-->
             <!-- E-mail -->
-            <div class='email' id='email'>
+            <div class='dados' id='Campoemail'>
 
                 <label for='email'>E-mail:</label>
                 <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
@@ -52,7 +59,7 @@
 
 
             <!-- Telefone -->
-            <div class='dados' id='telefone'>
+            <div class='dados' id='Campotelefone'>
                 <label for="telefone">Telefone:</label>
                 <input name="telefone" class="telefone" width='15' placeholder="(21) 999999999" type="tel">
             </div>
@@ -60,9 +67,9 @@
 
 
             <!-- Gênero -->
-            <div class='dados' id='genero'>
+            <div class='dados' id='Campogenero'>
 
-                <label for="genero">Gênero:</label>
+                <label for="genero"> Gênero:</label>
                 <input type='radio' name='genero' class='genero' value='masculino'>Masculino
                 <input type='radio' name='genero' class='genero' value='feminino'>Feminino
                 <input type='radio' name='genero' class='genero' onclick="" value='outro'>Outro
@@ -73,7 +80,7 @@
 
 
             <!-- Data -->
-            <div class='dados' id='data'>
+            <div class='dados' id='Campodata'>
 
                 <label for="data">Data de nascimento:</label>
                 <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
@@ -85,7 +92,7 @@
 
 
             <!-- Localidade -->
-            <div class='dados' id='endereco'>
+            <div class='dados' id='Campoendereco'>
                 <label for="endereco">Endereço:</label>
                 <input name="endereco" class="endereco" placeholder="Endereço" type="text">
             </div>
@@ -93,7 +100,7 @@
         </div>
 
         <!-- Experiência -->
-        <div class='dados' id='experiencia'>
+        <div class='dados' id='Campoexperiencia'>
             <label for="experiencia">Experiência Profissional:</label>
             <input name="experiencia" class="experiencia" placeholder="Experiência profissional" type="text">
             
@@ -104,7 +111,7 @@
 
 
         <!-- Instituição -->
-        <div class='dados' id='instituicao'>
+        <div class='dados' id='Campoinstituicao'>
             <label for="instituicao">Instituição:</label>
             <input id="instituicao" class="instituicao" name="instituicao" type="text">
         </div>
@@ -112,7 +119,7 @@
         <input type="submit" value="Aplicar">
 
         <!-- Idioma(s) -->
-        <div class='dados' id='idioma'>
+        <div class='dados' id='Campoidioma'>
             <label for="idioma">Experiência Profissional:</label>
             <input name="idioma" class="idioma" placeholder="Idioma" type="text">
             
@@ -120,6 +127,7 @@
                 onclick="novoInput(document.getElementById('idioma'),'idioma','Idioma',2)">+</button>
         </div>
 
+    </div>
     </form>
 </body>
 
