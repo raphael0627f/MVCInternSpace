@@ -48,6 +48,8 @@ generateCalendar = (month, year) => {
         //mostrando no console ao clicar na div
         day.addEventListener("click", function(){
             console.log(day.id)
+            console.log(curr_month)
+            console.log(year)
         });
         calendar_days.appendChild(day)
     }
