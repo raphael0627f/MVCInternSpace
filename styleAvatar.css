@@ -1,1 +1,54 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
 
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* adicionando imagem de fundo */
+    margin:0;
+    
+    background-color: #e2e2e5;
+    
+    
+}
+
+input {
+    margin-left: vh;
+}
+
+#dados {
+    padding-left: 30px;
+}
+
+#Formação {
+    padding-left: 30px;
+}
+
+#Estudo {
+    padding-left: 30px;
+}
+
+#Habilidades {
+    padding-left: 30px;
+}
+
+#cx1 {
+    margin-right: 10px;
+
+}
+
+#fundo {
+    padding-left: 20px
+}
