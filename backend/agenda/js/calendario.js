@@ -31,13 +31,12 @@ generateCalendar = (month, year) => {
     let first_day = new Date(year, month, 1)
     for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
         let day = document.createElement('div')
-        let day1 = 0
         let day2 = 0
         if (i >= first_day.getDay()) {
             day.classList.add('calendar-day-hover')
 
             day2 = i - first_day.getDay() + 1
-            day1 = first_day.getDay()
+            day.id = day2
             day.innerHTML = day2
 
             if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
