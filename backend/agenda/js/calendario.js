@@ -26,7 +26,7 @@ generateCalendar = (month, year) => {
     month_picker.innerHTML = curr_month
     calendar_header_year.innerHTML = year
 
-    // get first day of month
+    // pegar o primeiro dia do mês
 
     let first_day = new Date(year, month, 1)
     for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
