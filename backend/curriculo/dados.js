@@ -15,15 +15,15 @@ class curriculo {
 
 function construirCurriculo() {
     
-    foto = coletarDados("input.foto")
-    nome = coletarDados("input.nome")
-    email = coletarDados("input.email")
-    telefone = coletarDados("input.telefone")
-    genero = coletarDados("input.genero:checked", "radio")
-    data = coletarDados("input.data")
-    local = coletarDados("input.localizacao")
-    experiencia = coletarDados("input.experiencia")
-    instituicao = coletarDados("input.instituicao")
+    foto = coletarDados("input#foto")
+    nome = coletarDados("input#nome")
+    email = coletarDados("input#email")
+    telefone = coletarDados("input#telefone")
+    genero = coletarDados("input#genero:checked", "radio")
+    data = coletarDados("input#data")
+    local = coletarDados("input#localizacao")
+    experiencia = coletarDados("input#experiencia")
+    instituicao = coletarDados("input#instituicao")
 
     console.log(
         "\n",
