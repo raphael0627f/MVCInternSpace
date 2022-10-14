@@ -7,6 +7,8 @@ class loginDAO {
      $email= $login->getEmail();
      $senha = $login->getSenha();
 
+     $user=1;
+
         include_once("../../database/config.php");
         $stmt = $conn->prepare("INSERT INTO tb_login (idUsuario ,email, senha) VALUES (:idUsuario, :email, :senha)");
         $stmt->bindParam(':idUsuario',$user);
