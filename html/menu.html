@@ -5,9 +5,14 @@
     <meta charset='UTF-8'>
     <title>Currículo do Usuário</title>
     <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
-    <link href="../frontend/style.css" rel="stylesheet">
     <link href="../frontend/menu.css" rel="stylesheet">
+    <link href="../frontend/style.css" rel="stylesheet">
 </head>
+
+<!-- Header -->
+<header>
+    <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
+</header>
 
 <body>
 
@@ -36,7 +41,7 @@
 
 
             <!-- Nome -->
-            <div class='dados' id='Camponome'>
+            <div class='dados' id='container_nome'>
 
                 <label for="nome">Nome:</label>
                 <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
@@ -47,7 +52,7 @@
 
             <!-- POR QUE CRIAR UMA CLASSE PRA EMAILKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK-->
             <!-- E-mail -->
-            <div class='dados' id='Campoemail'>
+            <div class='dados' id='container_email'>
 
                 <label for='email'>E-mail:</label>
                 <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
@@ -59,7 +64,7 @@
 
 
             <!-- Telefone -->
-            <div class='dados' id='Campotelefone'>
+            <div class='dados' id='container_telefone'>
                 <label for="telefone">Telefone:</label>
                 <input name="telefone" class="telefone" width='15' placeholder="(21) 999999999" type="tel">
             </div>
@@ -67,20 +72,20 @@
 
 
             <!-- Gênero -->
-            <div class='dados' id='Campogenero'>
+            <div class='dados' id='container_genero'>
 
                 <label for="genero"> Gênero:</label>
                 <input type='radio' name='genero' class='genero' value='masculino'>Masculino
                 <input type='radio' name='genero' class='genero' value='feminino'>Feminino
                 <input type='radio' name='genero' class='genero' onclick="" value='outro'>Outro
-                <button type='button' onclick='limparSelecao("input.genero")'>Limpar Seleção</button>
+                <button type='button' class="buttonPadrao" onclick='limparSelecao("input.genero")'>Limpar Seleção</button>
 
             </div>
 
 
 
             <!-- Data -->
-            <div class='dados' id='Campodata'>
+            <div class='dados' id='container_data'>
 
                 <label for="data">Data de nascimento:</label>
                 <!-- Esse é o asterisco que normalmente está colorido em vermelho quando é obrigatório-->
@@ -92,7 +97,7 @@
 
 
             <!-- Localidade -->
-            <div class='dados' id='Campoendereco'>
+            <div class='dados' id='container_endereco'>
                 <label for="endereco">Endereço:</label>
                 <input name="endereco" class="endereco" placeholder="Endereço" type="text">
             </div>
@@ -100,32 +105,35 @@
         </div>
 
         <!-- Experiência -->
-        <div class='dados' id='Campoexperiencia'>
+        <div class='dados' id='container_experiencia'>
             <label for="experiencia">Experiência Profissional:</label>
             <input name="experiencia" class="experiencia" placeholder="Experiência profissional" type="text">
             
-            <button type="button" id="botaoAdicionar" class="botao"
+            <button type="button" id="botaoAdicionar" class="botaoAdicionar"
                 onclick="novoInput(document.getElementById('experiencia'),'experiencia','Experiência profissional',2)">+</button>
         </div>
 
 
 
         <!-- Instituição -->
-        <div class='dados' id='Campoinstituicao'>
+        <div class='dados' id='container_instituicao'>
             <label for="instituicao">Instituição:</label>
             <input id="instituicao" class="instituicao" name="instituicao" type="text">
         </div>
 
-        <input type="submit" value="Aplicar">
+        
 
         <!-- Idioma(s) -->
-        <div class='dados' id='Campoidioma'>
-            <label for="idioma">Experiência Profissional:</label>
+        <div class='dados' id='container_idioma'>
+            <label for="idioma">Idioma:</label>
             <input name="idioma" class="idioma" placeholder="Idioma" type="text">
             
-            <button type="button" id="botaoAdicionar" class="botao"
+            <button type="button" id="botaoAdicionar" class="botaoAdicionar"
                 onclick="novoInput(document.getElementById('idioma'),'idioma','Idioma',2)">+</button>
         </div>
+
+
+        <input type="submit" value="Aplicar">
 
     </div>
     </form>
