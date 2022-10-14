@@ -13,7 +13,7 @@ generateCalendar = (month, year) => {
 
     let calendar_days = calendar.querySelector('.calendar-days')
     let calendar_header_year = calendar.querySelector('#year')
-
+    // Pegando o ultimo dia do mês
     let days_of_month = [31, getFebDays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
     calendar_days.innerHTML = ''
