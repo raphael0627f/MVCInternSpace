@@ -47,9 +47,9 @@ generateCalendar = (month, year) => {
         }
         //mostrando no console ao clicar na div
         day.addEventListener("click", function(){
-            console.log(day.id)
-            console.log(curr_month)
-            console.log(year)
+            mes = parseInt(month)+parseInt(1)
+            let frase = document.getElementById("data");
+            frase.textContent = day.id+"/"+mes+"/"+year
         });
         calendar_days.appendChild(day)
     }
@@ -93,4 +93,4 @@ document.querySelector('#next-year').onclick = () => {
 
 function sinaliza(){
     console.log("uahfuab")
-}
+} 
