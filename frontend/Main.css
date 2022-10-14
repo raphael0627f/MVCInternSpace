@@ -217,3 +217,16 @@ margin-left: 19vh;
     border-radius:50% 6px; 
     transition: 0.5s;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    border: 3px solid white;
+}
