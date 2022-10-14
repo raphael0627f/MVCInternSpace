@@ -1,3 +1,82 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+
+}
+
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f2ea; 
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DO HEADER NO MEIO */
+    padding: 1vh;
+    width: 100%;
+    background-color: #292944;
+    z-index: 1;
+}
+
+header a {
+
+    color: #edb700;
+    text-decoration: none;
+    position: fixed;
+    right: 3vh;
+    font-size: 2vh;
+
+}
+header a:hover{
+    transition: 0.6;
+    color:white;
+
+}
+
+header img {
+    height: 19%;
+    width: 14%;
+    object-fit: fill;
+}
+
+#nome:hover {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -45,6 +124,12 @@ main {
     margin-top: -3.5vh;
     margin-left: 60vh; 
     text-decoration: none;
+}
+
+#adicionar-relatorio:hover {
+    color: #00b6ca;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 #relatorio {
@@ -96,9 +181,6 @@ main {
 }
 
 
-
-
-
 input[type='file']{
     display: grid;
 }
@@ -127,8 +209,10 @@ border: 1px black;
     position: fixed;
     align-items: center;
 }
+
 footer {
     position: static;
+    display: flex;
     margin-top: 100vh;
     bottom: 0;
     background-color: #292944;
@@ -136,11 +220,8 @@ footer {
     width: 100%;
     height: 100%;    
     text-align: center;
-    
 }
-#contanier-footer{
-margin-left: 150vh;
-}
+
 #img-edit{
 position: absolute;
 width: 2.2rem;
@@ -153,18 +234,37 @@ margin-left: 19vh;
     background-color: grey;
     color: white;
     border-radius:50% 6px; 
-     
-}
-body::-webkit-scrollbar {
-    width: 12px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-body::-webkit-scrollbar-track {
-    background: white;
+#imgPhoto-footer {
+    width: 20vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: grey;
-    border-radius: 20px;
-    border: 3px solid white;
+#meio-footer {
+    margin-left: 50vh;
 }
+
+#dir-footer {
+    margin-left: 58vh;
+}
+
+#t-footer {
+    color: #edb700;
+}
+
+#r-Social {
+    text-decoration: none;
+    color: white;
+}
+
+#r-Social:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+
+
