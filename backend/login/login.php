@@ -1,31 +1,17 @@
 <?php
-include("../login/DAO/LoginDAO.php");
+include("../login/Controller/ControllerLogin.php");
 include_once("../login/Model/ModelLogin.php");
 
-$login = new loginDAO();
+$login = new ControllerLogin();
 $Modellogin = new ModelLogin();
 
 $Modellogin->setEmail($_POST['email']);
-$Modellogin->setSenha($_POST['senha']);
+$Modellogin->setSenha(md5($_POST['senha']));
 
 
-$login->adicionarLogin($Modellogin);
+$login->adicionarLoginController($Modellogin);
 
-$stmt = $conn->prepare("INSERT INTO tb_login (idUsuario ,email, senha) VALUES (:idUsuario, :email, :senha)");
-$stmt->bindParam(':email', $email);
-$stmt->bindParam(':senha',$senha);
-$stmt->execute();
-$user = $stmt->fetch();
 
-// checando se realmente está no banco de dados
-echo var_dump($user);
-if($email == TRUE){
-    echo "Dados inseridos!";
-    var_dump($user);
-}
-else{
-    echo "";
-}
 
 
 
@@ -33,4 +19,3 @@ else{
 
 
 ?>
-
