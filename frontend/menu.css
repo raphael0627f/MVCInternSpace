@@ -29,8 +29,8 @@ body{
 }
 
 
-input {
-
+input[type=text],input[type=email],input[type=tel] {
+    background-color: #f1f2ea;
     padding: 1.8vh;
     border-radius: 50px;
     border: none;
@@ -53,7 +53,8 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
     border-width: 0.3vh;
 }
 
-.buttonPadrao {
+/* BOTÃO PRIMÁRIO */
+.btnPrimario {
     background-color: rgba(41, 41, 68, 1);
     border-radius: 100px;
     border: none;
@@ -62,12 +63,36 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
     font-size: 1.5vh;
     
 }
-.buttonPadrao:hover{
+.btnPrimario:hover{
     background-color: rgb(80, 80, 108);
     transition: 0.1s;
     cursor: pointer;
 }
-.buttonPadrao:active{
+.btnPrimario:active{
+    background-color: rgb(11, 11, 38)
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btnSecundario {
+    
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    border: none;
+    padding: 1.7vh 2vh;
+    color: rgb(122, 122, 122);
+    font-size: 1.5vh;
+
+    border-style: solid;
+    border-color: rgb(122, 122, 122);
+    border-width: 0.3vh;
+    
+}
+.btnSecundario:hover{
+    background-color: rgb(80, 80, 108);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.btnSecundario:active{
     background-color: rgb(11, 11, 38)
 }
 
