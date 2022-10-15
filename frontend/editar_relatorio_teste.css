@@ -12,7 +12,7 @@
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -30,12 +30,26 @@ header {
     padding: 1vh;
     width: 100%;
     background-color: #292944;
+    z-index: 1;
     
 }
 header img {
     height: 19%;
     width: 14%;
     object-fit: fill;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    border: 3px solid white;
 }
 
 #card{
@@ -45,16 +59,25 @@ header img {
     margin-top: 30vh;
     box-sizing: border-box;
     background-color: #D9D9D9;
-    position: fixed;
+    position: absolute;
     padding: 4vh;
     border-radius: 25px;
     width: 70%;
     height: 60%;
+    
 }
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #relatorio{
-position: fixed;
+position: static;
 height: 40vh;
 width: 135vh;
+background-color: #D9D9D9;
+border-color: black;
+
 }
 #enviar{
 position: absolute;
@@ -64,34 +87,16 @@ color: white;
 margin-top: 45vh;
 margin-left: 44%;
 }
+#enviar:hover{
+cursor: pointer;
+color: #00b6ca;
+}
 #escita-relatorio{
     color: #292944;
     position: absolute;
     margin-top: 25vh;
     margin-left: 40vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -132,4 +137,5 @@ footer {
     color: gray;
     transition: 0.3s;
 }
+
 
