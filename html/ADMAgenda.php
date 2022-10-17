@@ -14,6 +14,7 @@ $results = $stmt->fetchAll(PDO::FETCH_OBJ);
     <link href="../frontend/ADMAgenda.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./frontend/scrollbar.css">
+    <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
     <title>ADM Agenda</title>
 </head>
 
