@@ -8,6 +8,7 @@
 * {
 
     font-family: 'Montserrat';
+    color: white;
 
 }
 
@@ -17,38 +18,26 @@ html {
 
 body {
     /* adicionando imagem de fundo */
-    margin:0;
+    margin: 0;
     
-    background-color: #e2e2e5;
+    background-color: #292944;
     
+}
+
+.style{
+    width: 400px;
+    height: 5px;
+}
+
+.Dado{
+    width: 90px;
+    height: 70px;
+    padding-left: 200px;
+}
+.Seg{
+    width: 90px;
+    height: 70px;
+    padding-left: 800px;
+    padding-top: 200px;
     
-}
-
-input {
-    margin-left: vh;
-}
-
-#dados {
-    padding-left: 30px;
-}
-
-#Formação {
-    padding-left: 30px;
-}
-
-#Estudo {
-    padding-left: 30px;
-}
-
-#Habilidades {
-    padding-left: 30px;
-}
-
-#cx1 {
-    margin-right: 10px;
-
-}
-
-#fundo {
-    padding-left: 20px
 }
