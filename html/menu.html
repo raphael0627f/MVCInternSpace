@@ -5,152 +5,154 @@
     <meta charset='UTF-8'>
     <title>Currículo do Usuário</title>
     <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
+    
     <link href="../frontend/menu.css" rel="stylesheet">
     <link href="../frontend/style.css" rel="stylesheet">
 </head>
 
+<header>
+    <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
+</header>
 
 <body>
 
-    <!-- Header & Footer -->
-    <header>
-        <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
-    </header>
     <main>
 
-        <footer>
-            <div id="esq-footer">
-                <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
-            </div>
-            <div id="meio-footer">
-                <ul id="t-footer">Contato</ul>
-                <ul>99 9999-9999</ul>
-                <ul>exemplo@gmail.com</ul>
-            </div>
-            <div id="dir-footer">
-                <ul id="t-footer">Redes Sociais</ul>
-                <ul><a id="r-Social" href="#">Instagram</a></ul>
-                <ul><a id="r-Social" href="#">Facebook</a></ul>
-            </div>
-        </footer>
+        <div class="center-horizontal cartao">
+            <!-- FORMULÁRIO -->
+            <form action="../database/salvar_aluno.php" method="POST">
+
+                <h1>Editar Dados</h1>
+
+
+
+                <table>
+                    <!-- Foto -->
+                    <div class='dados' id='foto'>
+                        <span class="ast-obrigatorio">*</span>
+                        <label for="foto">Foto:</label>
+                        <input name="foto" id="foto" type="file" accept=".jpg, .png, .jpeg, .jfif" required>
+                        <!-- <button type="button" class="botao" onclick="apagarValor('foto')" id="removerFoto">Remover</button> -->
+
+                    </div>
+
+
+
+                    <!-- Nome -->
+                    <div class='dados' id='nome'>
+                        <span class="ast-obrigatorio">*</span>
+                        <label for="nome">Nome:</label>
+
+                        <input id="nome" name="nome" type="text" placeholder="Insira seu nome..." required>
+                    </div>
+
+
+                    <!-- E-mail -->
+                    <div class='dados' id='email'>
+                        <span class="ast-obrigatorio">*</span>
+                        <label for='email'>E-mail:</label>
+                        <input id="email" name='email' type='email' placeholder="exemplo@email.com" required>
+
+                    </div>
+
+
+
+                    <!-- Telefone -->
+                    <div class='dados' id='telefone'>
+                        <label for="telefone">Telefone:</label>
+                        <input name="telefone" id="telefone" width='15' placeholder="(21) 999999999" type="tel">
+                    </div>
+
+
+
+                    <!-- Gênero -->
+                    <div class='dados' id='genero'>
+
+                        <label for="genero"> Gênero:</label>
+                        <input type='radio' name='genero' class='genero' value='masculino'>Masculino
+                        <input type='radio' name='genero' class='genero' value='feminino'>Feminino
+                        <input type='radio' name='genero' class='genero' onclick="" value='outro'>Outro
+                        <button type='button' class="btnSecundario" onclick='limparSelecao("input.genero")'>Limpar
+                            Seleção</button>
+
+                    </div>
+
+
+
+                    <!-- Data -->
+                    <div class='dados' id='data'>
+                        <span class="ast-obrigatorio">*</span>
+                        <label for="data">Data de nascimento:</label>
+                        <input name="data" class="data" type="date" required>
+
+                    </div>
+
+
+
+                    <!-- Localidade -->
+                    <div class='dados' id='endereco'>
+                        <label for="endereco">Endereço:</label>
+                        <input name="endereco" class="endereco" placeholder="Endereço" type="text">
+                    </div>
+
+
+
+
+                    <!-- Experiência -->
+                    <div class='dados' id='experiencia'>
+                        <label for="experiencia">Experiência Profissional:</label>
+                        <input name="experiencia" class="experiencia" placeholder="Experiência profissional"
+                            type="text">
+
+                        <button type="button" id="botaoAdicionar" class="botaoAdicionar"
+                            onclick="novoInput(document.getElementById('experiencia'),'experiencia','Experiência profissional',2)">+</button>
+                    </div>
+
+
+
+                    <!-- Instituição -->
+                    <div class='dados' id='instituicao'>
+                        <label for="instituicao">Instituição:</label>
+                        <input id="instituicao" class="instituicao" name="instituicao" type="text">
+                    </div>
+
+
+
+                    <!-- Idioma(s) -->
+                    <div class='dados' id='idioma'>
+                        <label for="idioma">Idioma:</label>
+                        <input name="idioma" class="idioma" placeholder="Idioma" type="text">
+
+                        <button type="button" id="botaoAdicionar" class="botaoAdicionar"
+                            onclick="novoInput(document.getElementById('idioma'),'idioma','Idioma',2)">+</button>
+                    </div>
+
+
+
+                    <input type="submit" class="btnPrimario" value="Aplicar">
+                </table>
+        </div>
+        </form>
+
+        
+
     </main>
-
-
-    <div class="center-vertical center-horizontal cartao">
-        <!-- FORMULÁRIO -->
-        <form action="../database/salvar_aluno.php" method="POST">
-
-            <h1>Editar Dados</h1>
-
-
-
-            <table>
-                <!-- Foto -->
-                <div class='dados' id='foto'>
-                    <span class="ast-obrigatorio">*</span>
-                    <label for="foto">Foto:</label>
-                    <input name="foto" id="foto" type="file" accept=".jpg, .png, .jpeg, .jfif" required>
-                    <!-- <button type="button" class="botao" onclick="apagarValor('foto')" id="removerFoto">Remover</button> -->
-
-                </div>
-
-
-
-                <!-- Nome -->
-                <div class='dados' id='nome'>
-                    <span class="ast-obrigatorio">*</span>
-                    <label for="nome">Nome:</label>
-                    
-                    <input id="nome" name="nome" type="text" placeholder="Insira seu nome..." required>
-                </div>
-
-
-                <!-- E-mail -->
-                <div class='dados' id='email'>
-                    <span class="ast-obrigatorio">*</span>
-                    <label for='email'>E-mail:</label>
-                    <input id="email" name='email' type='email' placeholder="exemplo@email.com" required>
-
-                </div>
-
-
-
-                <!-- Telefone -->
-                <div class='dados' id='telefone'>
-                    <label for="telefone">Telefone:</label>
-                    <input name="telefone" id="telefone" width='15' placeholder="(21) 999999999" type="tel">
-                </div>
-
-
-
-                <!-- Gênero -->
-                <div class='dados' id='genero'>
-
-                    <label for="genero"> Gênero:</label>
-                    <input type='radio' name='genero' class='genero' value='masculino'>Masculino
-                    <input type='radio' name='genero' class='genero' value='feminino'>Feminino
-                    <input type='radio' name='genero' class='genero' onclick="" value='outro'>Outro
-                    <button type='button' class="btnSecundario" onclick='limparSelecao("input.genero")'>Limpar
-                        Seleção</button>
-
-                </div>
-
-
-
-                <!-- Data -->
-                <div class='dados' id='data'>
-                    <span class="ast-obrigatorio">*</span>
-                    <label for="data">Data de nascimento:</label>
-                    <input name="data" class="data" type="date" required>
-
-                </div>
-
-
-
-                <!-- Localidade -->
-                <div class='dados' id='endereco'>
-                    <label for="endereco">Endereço:</label>
-                    <input name="endereco" class="endereco" placeholder="Endereço" type="text">
-                </div>
-
-
-
-
-            <!-- Experiência -->
-            <div class='dados' id='experiencia'>
-                <label for="experiencia">Experiência Profissional:</label>
-                <input name="experiencia" class="experiencia" placeholder="Experiência profissional" type="text">
-
-                <button type="button" id="botaoAdicionar" class="botaoAdicionar"
-                    onclick="novoInput(document.getElementById('experiencia'),'experiencia','Experiência profissional',2)">+</button>
-            </div>
-
-
-
-            <!-- Instituição -->
-            <div class='dados' id='instituicao'>
-                <label for="instituicao">Instituição:</label>
-                <input id="instituicao" class="instituicao" name="instituicao" type="text">
-            </div>
-
-
-
-            <!-- Idioma(s) -->
-            <div class='dados' id='idioma'>
-                <label for="idioma">Idioma:</label>
-                <input name="idioma" class="idioma" placeholder="Idioma" type="text">
-
-                <button type="button" id="botaoAdicionar" class="botaoAdicionar"
-                    onclick="novoInput(document.getElementById('idioma'),'idioma','Idioma',2)">+</button>
-            </div>
-
-            
-
-            <input type="submit" class="btnPrimario" value="Aplicar">
-            </table>
-    </div>
-    </form>
 </body>
+<footer>
+    <div id="esq-footer">
+        <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
+    </div>
+    <div id="meio-footer">
+        <ul id="t-footer">Contato</ul>
+        <ul>24 9999-9999</ul>
+        <ul>exemplo@gmail.com</ul>
+    </div>
+    <div id="dir-footer">
+        <ul id="t-footer">Redes Sociais</ul>
+        <ul><a id="r-Social" href="#">Instagram</a></ul>
+        <ul><a id="r-Social" href="#">Facebook</a></ul>
+    </div>
+</footer>
 
 <script src="../backend/curriculo/novoCampo.js"></script>
 <script src="../backend/curriculo/removerFoto.js"></script>
