@@ -1,3 +1,4 @@
+
 #overlay {
     background-color: rgba(95, 95, 95, 0.5);
     width: 100%;
@@ -94,3 +95,64 @@ a,#contato{
     color: gray;
     cursor: pointer;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    position: static;
+    display: flex;
+    margin-top: 100vh;
+    bottom: 0;
+    background-color: #292944;
+    color: #FFF;
+    width: 100%;
+    height: 100%;    
+    text-align: center;
+}
+
+#img-edit{
+position: absolute;
+width: 2.2rem;
+height: 2.2rem;
+left: 75%;
+margin-top: -1.5vh;
+margin-left: 19vh;
+}
+#img-edit:hover{
+    background-color: grey;
+    color: white;
+    border-radius:50% 6px; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#imgPhoto-footer {
+    width: 20vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
+}
+
+#meio-footer {
+    margin-left: 50vh;
+}
+
+#dir-footer {
+    margin-left: 58vh;
+}
+
+#t-footer {
+    color: #edb700;
+}
+
+#r-Social {
+    text-decoration: none;
+    color: white;
+}
+
+#r-Social:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
