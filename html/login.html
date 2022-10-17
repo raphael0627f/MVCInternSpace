@@ -8,20 +8,39 @@
     <link href="../frontend/login.css" rel="stylesheet">
     <link href="../frontend/style.css" rel="stylesheet"> <!-- CSS geral -->
 
-    <link rel="icon" type="image/x-icon" href="../assets/csn-icon-black.png">
-    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
+    <title>login</title>
 
 </head>
 
-<header>
-    <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possível carregar a imagem">
-</header>
-<body>
 
+<body>
+    <!-- Header & Footer -->
+    <header>
+        <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
+    </header>
     <main>
+
+        <footer>
+            <div id="esq-footer">
+                <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
+            </div>
+            <div id="meio-footer">
+                <ul id="t-footer">Contato</ul>
+                <ul>99 9999-9999</ul>
+                <ul>exemplo@gmail.com</ul>
+            </div>
+            <div id="dir-footer">
+                <ul id="t-footer">Redes Sociais</ul>
+                <ul><a id="r-Social" href="#">Instagram</a></ul>
+                <ul><a id="r-Social" href="#">Facebook</a></ul>
+            </div>
+        </footer>
+    </main>
+
     <!-- Form-->
     <form action="../backend/login/login.php" method="post">
-        <div class="center-horizontal cartao">
+        <div id="cartao">
 
             <span id="login-h1">Login</span>
             <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
@@ -34,22 +53,10 @@
         </div>
     </form>
 
-</main>
+
+    <!-- Fundo branco transparente -->
+    <div id="overlay"></div>
+
 </body>
-<footer>
-    <div id="esq-footer">
-        <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
-    </div>
-    <div id="meio-footer">
-        <ul id="t-footer">Contato</ul>
-        <ul>99 9999-9999</ul>
-        <ul>exemplo@gmail.com</ul>
-    </div>
-    <div id="dir-footer">
-        <ul id="t-footer">Redes Sociais</ul>
-        <ul><a id="r-Social" href="#">Instagram</a></ul>
-        <ul><a id="r-Social" href="#">Facebook</a></ul>
-    </div>
-</footer>
 
 </html>
