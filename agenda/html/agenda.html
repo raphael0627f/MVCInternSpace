@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../frontend/agenda.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
+    <link href="../css/agenda.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../assets/csn-icon-white-background.png">
     <title>Agenda</title>
 
 </head>
@@ -14,11 +14,11 @@
 
 <body>
     <header>
-        <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
+        <img src="../../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
         <a id="nome">Giovanna</a>
         <input type="image" alt="imagem" id="imagem">
     </header>
-    <form id="formAgendamento" action="../backend/agenda/php/adicionarAgendamento.php" method="post">
+    <form id="formAgendamento" action="../php/adicionarAgendamento.php" method="post">
         <div id="cartao">
             <span id="text-span">Agendar vaga:</span>
             <label id="periodo" for="periodo">Período:</label>
@@ -95,7 +95,7 @@
         </div>
     </form>
     <div id="overlay"></div>
-    <script src="../backend/agenda/js/calendario.js"></script>
+    <script src="../js/calendario.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
