@@ -9,6 +9,7 @@ class ModelUsuario{
     private $telefone;
     private $email;
     private $genero;
+    private $dataNascimento;
     
     
     function getId() {
@@ -46,6 +47,10 @@ class ModelUsuario{
     function getGenero() {
         return $this->genero;
     }
+    
+    function getDataNascimento() {
+        return $this->dataNascimento;
+    }
 
     function setId($id) {
         $this->id = $id;
@@ -82,6 +87,11 @@ class ModelUsuario{
     function setGenero($genero) {
         $this->genero = $genero;
     }
+    
+        function setDataNascimento($dataNascimento) {
+        $this->dataNascimento = $dataNascimento;
+    }
+    
 }
 
 
