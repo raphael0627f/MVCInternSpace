@@ -1,44 +1,3 @@
-@font-face { /* Adicionando a fonte Montserrat */
-    font-family: Montserrat;
-    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
-
-}
-
-@font-face { /* Adicionando a fonte Montserrat */
-    font-family: Montserrat;
-    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
-
-}
-
-
-* {
-
-    font-family: 'Montserrat';
-
-}
-
-html {
-    min-height: 100%;
-}
-
-body {
-    margin: 0;
-    background-color: #f1f2ea; 
-}
-
-body::-webkit-scrollbar {
-    width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-    background: white;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: grey;
-    border-radius: 20px;
-    border: 3px solid white;
-}
 
 header {
     position: fixed;
@@ -175,11 +134,10 @@ border: 1px black;
 footer {
     position: static;
     display: flex;
-    margin-top: 100vh;
     bottom: 0;
     background-color: #292944;
     color: #FFF;
-    width: 100%;
+    width: 100%; 
     height: 100%;    
     text-align: center;
 }
