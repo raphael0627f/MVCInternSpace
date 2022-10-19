@@ -1,6 +1,6 @@
 <?php
-include_once('../php/Controller/ControllerUsuario.php');
-include('../php/Model/ModelUsuario.php');
+include_once('../avatar/Controller/ControllerUsuario.php');
+include('../avatar/Model/ModelUsuario.php');
 
 $usuario = new ControllerUsuario();
 $model= new ModelUsuario();
