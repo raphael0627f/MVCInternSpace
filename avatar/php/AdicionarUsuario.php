@@ -1,9 +1,10 @@
 <?php
-require_once('Controller/controllerUsuario.php');
-require_once('Model/ModelUsuario.php');
+include_once('../php/Controller/ControllerUsuario.php');
+include('../php/Model/ModelUsuario.php');
 
-
+$usuario = new ControllerUsuario();
 $model= new ModelUsuario();
+
 
 $model->setNome($_POST['nome']);
 $model->setEndereco($_POST['endereco']);
@@ -14,7 +15,7 @@ $model->setFiliacao($_POST['filiacao']);
 $model->setTelefone($_POST['telefone']);
 $model->setEmail($_POST['email']);
 $model->setGenero($_POST['genero']);
-$usuario = new ControllerUsuario();
+
 $usuario->adicionarUsuarioController($model);
 
 ?>
