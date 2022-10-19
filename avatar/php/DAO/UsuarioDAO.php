@@ -3,8 +3,8 @@
 class UsuarioDAO {
     
     function adicionarUsuario(ModelUsuario $usuario){
-        require_once('./conexao/config.php');
-        require_once('./Model/ModelUsuario.php');
+        require_once('../conexao/config.php');
+        
 
         $nome = $usuario->getNome();
         $endereco = $usuario->getEndereco();
