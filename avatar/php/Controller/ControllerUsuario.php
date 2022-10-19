@@ -1,5 +1,5 @@
 <?php
-require_once('../DAO/UsuarioDAO.php');
+include_once('../DAO/UsuarioDAO.php');
 class ControllerUsuario{
     
     function adicionarUsuarioController(ModelUsuario $usuario){
