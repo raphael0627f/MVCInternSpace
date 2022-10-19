@@ -9,53 +9,55 @@
     <link href="../frontend/style.css" rel="stylesheet"> <!-- CSS geral -->
 
     <link rel="icon" type="image/x-icon" href="../assets/csn-icon-white-background.png">
-    <title>login</title>
+    <title>Login</title>
 
 </head>
 
 
 <body>
-    <!-- Header & Footer -->
+    <!-- Header -->
     <header>
         <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
     </header>
+
+
     <main>
 
-        <footer>
-            <div id="esq-footer">
-                <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
+
+        <!-- Form-->
+        <form action="../backend/login/login.php" method="post">
+            <div id="cartao">
+
+                <span id="login-h1">Login</span>
+                <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
+                <br>
+                <input name="senha" id="input-senha" type="password" placeholder="Senha" required>
+                <br>
+                <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
+                <a href="esq-a-senha.html" class="esq-a-senha">Esqueceu a senha?</a>
+
             </div>
-            <div id="meio-footer">
-                <ul id="t-footer">Contato</ul>
-                <ul>99 9999-9999</ul>
-                <ul>exemplo@gmail.com</ul>
-            </div>
-            <div id="dir-footer">
-                <ul id="t-footer">Redes Sociais</ul>
-                <ul><a id="r-Social" href="#">Instagram</a></ul>
-                <ul><a id="r-Social" href="#">Facebook</a></ul>
-            </div>
-        </footer>
+        </form>
+
+
     </main>
 
-    <!-- Form-->
-    <form action="../backend/login/login.php" method="post">
-        <div id="cartao">
-
-            <span id="login-h1">Login</span>
-            <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
-            <br>
-            <input name="senha" id="input-senha" type="password" placeholder="Senha" required>
-            <br>
-            <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
-            <a href="esq-a-senha.html" class="esq-a-senha">Esqueceu a senha?</a>
-
+    <!-- Footer -->
+    <footer>
+        <div id="esq-footer">
+            <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
         </div>
-    </form>
-
-
-    <!-- Fundo branco transparente -->
-    <div id="overlay"></div>
+        <div id="meio-footer">
+            <ul id="t-footer">Contato</ul>
+            <ul>99 9999-9999</ul>
+            <ul>exemplo@gmail.com</ul>
+        </div>
+        <div id="dir-footer">
+            <ul id="t-footer">Redes Sociais</ul>
+            <ul><a id="r-Social" href="#">Instagram</a></ul>
+            <ul><a id="r-Social" href="#">Facebook</a></ul>
+        </div>
+    </footer>
 
 </body>
 
