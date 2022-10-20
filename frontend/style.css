@@ -81,7 +81,7 @@ main{
 }footer {
     position: static;
     display: flex;
-    margin-top: 100vh;
+    margin-top:50vh;
     bottom: 0;
     background-color: #292944;
     color: #FFF;
