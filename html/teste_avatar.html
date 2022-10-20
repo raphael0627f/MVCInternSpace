@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../frontend/teste_avatar.css" rel="stylesheet">
+    <link href="../frontend/style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/csn-icon-black.png">
     <title>Cadastro</title>
 
@@ -22,6 +23,7 @@
             <main>
                 <div id="card">
                     <br><br><br><br>
+                    <span id="escritaCadastro">Cadastro :</span>
                     <span>Nome:</span> <input type="text" name="nome"><br>
                     <span>Endereço:</span> <input type="text" name="endereco">
                     <br><span>Cpf:</span> <input type="text" name="cpf"><br>
@@ -32,20 +34,37 @@
                     <span>Filiação:</span> <input type="text" name="filiacao"><br>
                     <span>E-mail:</span> <input type="text" name="email"><br>
                     <span>Foto:</span> <img src="../assets/imagem.jpg"><br>
-                    <span>Sexo:</span> 
+                    <span>Sexo:</span>
                     <select name="genero" id="genero">
-                        <option  value="Masculino">Masculino</option>
+                        <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
                         <option value="Outro">Outro</option>
                         <option value="Prefiro não dizer">Prefiro não falar</option>
                     </select>
-                    
+
                     Data de nascimento: <input type="date" maxlength="8" name="dataNascimento"><br>
-                    Idade: <input type="text" ><br>
+                    Idade: <input type="text"><br>
 
                     <span>Instituição:</span> <input type="text"><br>
                     <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
                 </div>
+                <footer>
+
+                    <div id="esq-footer">
+                        <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
+                    </div>
+                    <div id="meio-footer">
+                        <ul id="t-footer">Contato</ul>
+                        <ul>99 9999-9999</ul>
+                        <ul>exemplo@gmail.com</ul>
+                    </div>
+                    <div id="dir-footer">
+                        <ul id="t-footer">Redes Sociais</ul>
+                        <ul><a id="r-Social" href="#">Instagram</a></ul>
+                        <ul><a id="r-Social" href="#">Facebook</a></ul>
+                    </div>
+
+                </footer>
             </main>
         </form>
 
