@@ -1,20 +1,23 @@
-id = 0
-function novoInput(pai, nomepai, placeholder,limite) {
+class id{
+    id = 0
+}
+function novoInput(pai, button, placeholder,limite) {
 
-    globalThis.id += 1
+    idBtn = new id()
+    console.log(this.idBtn)
     // Criando um id único para cada elemento
-    idAtual = globalThis.id
+    idAtual = idBtn
 
     // Criando o div que englobará os elementos novos, desta forma todos podem ser apagados de uma vez
     div = newElement('div')
     div.id = idAtual
 
-    botaoAdd = document.getElementById("botaoAdicionar")
+    botaoAdd = button
 
 
     // Caixa de texto
     caixa = newElement('input')
-    caixa.setAttribute("class", `${nomepai}`)
+    caixa.setAttribute("class", `${pai.id}`)
     caixa.type = "text"
     caixa.setAttribute("placeholder",placeholder)
     caixa.required = true
@@ -50,7 +53,7 @@ function newElement(elementType) {
 // Apagar elemento
 function removeElement(pai, element) {
     
-    botaoAdd = document.getElementById("botaoAdicionar")
+    botaoAdd = button
 
     pai.removeChild(element)
     

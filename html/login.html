@@ -15,7 +15,7 @@
 
 
 <body>
-    <!-- Header -->
+    <!-- Header  -->
     <header>
         <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
     </header>
@@ -23,26 +23,29 @@
 
     <main>
 
+        <div class="center-horizontal center-vertical cartao">
+            <!-- Form-->
+            <form action="../backend/login/login.php" method="post">
 
-        <!-- Form-->
-        <form action="../backend/login/login.php" method="post">
-            <div id="cartao">
 
                 <span id="login-h1">Login</span>
                 <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
                 <br>
                 <input name="senha" id="input-senha" type="password" placeholder="Senha" required>
                 <br>
-                <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
-                <a href="esq-a-senha.html" class="esq-a-senha">Esqueceu a senha?</a>
 
-            </div>
-        </form>
+                <div class="container-botoes">
+                    <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
+                    <a href="esq-a-senha.html" class="esq-a-senha">Esqueceu a senha?</a>
+                </div>
+
+            </form>
+        </div>
 
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer
     <footer>
         <div id="esq-footer">
             <img src="../assets/logo-educac-amarelo.png" alt="Imagem Fundação CSN" id="imgPhoto-footer">
@@ -58,7 +61,7 @@
             <ul><a id="r-Social" href="#">Facebook</a></ul>
         </div>
     </footer>
-
+-->
 </body>
 
 </html>
