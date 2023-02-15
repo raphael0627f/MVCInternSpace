@@ -1,0 +1,141 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background-color: #f1f2ea;
+    
+}
+
+.center-vertical{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.center-horizontal{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+  /******************************/
+ /*          HEADER            */
+/******************************/
+
+header {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DO HEADER NO MEIO */
+    padding: 1vh;
+    width: 100%;
+    background-color: #292944;
+}
+
+header a {
+
+    color: #edb700;
+    text-decoration: none;
+    position: fixed;
+    right: 3vh;
+    font-size: 2vh;
+
+}
+header a:hover{
+    transition: 0.6;
+    color:white;
+
+}
+
+header img {
+    height: 19%;
+    width: 14%;
+    object-fit: fill;
+}
+
+
+a {
+    color: #292944;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-top: 100vh;
+    bottom: 0;
+    background-color: #292944;
+    color: #FFF;
+    width: 100%;
+    height: 100%;    
+    text-align: center;
+}
+
+.link-container{
+    justify-content: center;
+}
+
+.r-Social-icon{
+    margin-right: 1vh;
+}
+
+#imgPhoto-footer {
+    margin-top: 1.5vh;
+    width: 20vh;
+}
+
+#meio-footer {
+    margin-left: 50vh;
+}
+
+#dir-footer {
+    margin-left: 50vh;
+}
+
+#t-footer {
+    color: #edb700;
+}
+
+#r-Social {
+    text-decoration: none;
+    color: white;
+}
+
+#r-Social:hover {
+    color: gray;
+    transition: 0.3s;
+}

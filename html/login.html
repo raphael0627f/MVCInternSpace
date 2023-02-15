@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../frontend/login.css" rel="stylesheet">
+    <link href="../frontend/style.css" rel="stylesheet"> <!-- CSS geral -->
+
+    <link rel="icon" type="image/x-icon" href="../assets/csn-icon-black.png">
+    <title>Login</title>
+
+</head>
+
+
+<body>
+    <!-- Header  -->
+    <header>
+        <img src="../assets/FCSN_Capacitar_BRANCO.png" alt="Não foi possivel carregar a imagem">
+    </header>
+
+
+    <main>
+
+        <div class="cartao">
+            <!-- Form-->
+            <form action="../backend/login/login.php" method="post">
+
+
+                <span id="login-h1">Login</span>
+                <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
+                <br>
+                <input name="senha" id="input-senha" type="password" placeholder="Senha" required>
+                <br>
+
+                <div class="container-botoes">
+                    <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
+                    <a href="esq-a-senha.html" class="esq-a-senha">Esqueceu a senha?</a>
+                </div>
+
+            </form>
+        </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <img src="../assets/logo-educac-amarelo.png" alt="Fundação CSN" id="imgPhoto-footer">
+        </div>
+        <div class="footer-container">
+            <ul id="t-footer">CONTATO</ul>
+            <ul>fundacao@csn.com.br</ul>
+        </div>
+        <div class="footer-container">
+            <div>
+                <ul id="t-footer">REDES SOCIAIS</ul>
+            </div>
+
+            <div class="link-container">
+                <ul><img class="r-Social-icon" src="../assets/Instagram.svg" style="height: 2.5vh;"><a id="r-Social"
+                        href="https://www.instagram.com/fundacaocsn/" target="_blank">Instagram</a></ul>
+            </div>
+            <div class="link-container">
+                <!--target blank faz abrir em nova guia"-->
+                <ul><img class="r-Social-icon" src="../assets/Facebook.svg" style="height: 2.5vh;"><a id="r-Social"
+                        href="https://www.facebook.com/fundacaocsn/" target="_blank">Facebook</a></ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

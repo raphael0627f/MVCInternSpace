@@ -1,0 +1,55 @@
+@font-face { /* Adicionando a fonte Montserrat */
+    font-family: Montserrat;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+
+}
+
+
+* {
+
+    font-family: 'Montserrat';
+    color: white;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* adicionando imagem de fundo */
+    margin: 0;
+    
+    background-color: #292944;
+    
+}
+
+.style{
+    width: 400px;
+    height: 5px;
+}
+
+.Dado{
+    width: 90px;
+    height: 70px;
+    padding-left: 200px;
+}
+.Seg{
+    width: 90px;
+    height: 70px;
+    padding-left: 800px;
+    padding-top: 200px;
+    
+}
+
+span{
+    margin-bottom: 10%;
+    
+}
+input{
+    margin-bottom: 10%;
+}
+
+select option{
+    color:black;
+}

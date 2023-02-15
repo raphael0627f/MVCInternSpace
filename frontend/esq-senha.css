@@ -1,0 +1,104 @@
+
+#overlay {
+    background-color: rgba(95, 95, 95, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+#cartao {
+
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px 1px #0000007b;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    height: 50vh;
+    padding: 5vh;
+    border-radius: 15px;
+
+}
+
+#input-e-mail {
+    height: 2%;
+    width: 94%;
+    position: relative;
+    border: 0;
+    border-bottom: 2px solid #292944;
+    display: inline-block;
+    margin-bottom: 3vh;
+    background-color: #F2F1EA;
+    padding: 2vh;
+    outline: none;
+    font-size: 1.5vh;
+    transition: 0.3s
+}
+
+#input-e-mail:focus, #input-e-mail:hover{
+    border-bottom: 2px solid #00b6ca;
+}
+
+#input-e-mail::placeholder{
+    border-color: blue;
+}
+
+#confirmar {
+    position: relative;
+
+    background-color: rgba(41, 41, 68, 1);
+    border-radius: 100px;
+    border: none;
+    padding: 2vh;
+    width: 25%;
+    top: 1%;
+    left: 37%;  
+    color: white;
+    font-size: 1.5vh;
+
+    transition: 0.2s;
+}
+
+#confirmar:hover {
+    
+    background-color: #6279b8;
+    color: white;
+    cursor: pointer;
+}
+
+
+#campo-01{
+
+    color: #292944;
+    position: relative;
+    margin-bottom: 3vh;
+    font-size: 15px;
+    
+}
+
+#logo-campo{
+
+    height: 5vh;
+    margin-bottom: 8vh;
+
+}
+
+#contato{
+    position: relative;
+    top: 6%;
+    left: 15%;
+    font-size: 1.5vh;
+}
+
+#contato:hover{
+    transition: 0.1;
+    color: gray;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
