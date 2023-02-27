@@ -35,3 +35,8 @@ body{
 #btn-login:active{
     background-color: var(--roxo-escuro)
 }
+#text_01{
+    margin-top: 10%;
+    color: white;
+    font-size: 20px;
+}
