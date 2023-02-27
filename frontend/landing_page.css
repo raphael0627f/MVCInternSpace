@@ -54,3 +54,9 @@ body{
     margin-top: 34%;
     transition: 0.5s;
 }
+#btn-cadastro:hover{
+    background-color: var(--roxo-claro);
+}
+#btn-cadastro:active{
+    background-color: var(--roxo-escuro)
+}
