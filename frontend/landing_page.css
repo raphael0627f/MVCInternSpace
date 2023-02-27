@@ -47,9 +47,10 @@ body{
     color: var(--texto-claro); /* cor da fonte */
     background-color: var(--roxo); /* cor customizada localizada no style.css, dá uma olhada lá */
     text-align: center;
-    position: relative;
+    position: fixed;
     border: none;
-    left: 79%;
+    left: 2%;
     font-size: 16px;
+    margin-top: 34%;
     transition: 0.5s;
 }
