@@ -5,5 +5,17 @@
     height: 5%;
     background-color: yellow;
     text-align: center;
+    position: fixed;
+    right: 3vh;
+    font-size: 2vh;
 
+}
+
+#bt_login:active{
+    box-shadow: 0px 1px 0px #2E8B57;
+    top: 15px;
+}
+#bt_login:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
 }
