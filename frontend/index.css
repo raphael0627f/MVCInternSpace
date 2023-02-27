@@ -1,4 +1,16 @@
 
+body{
+     /* adicionando imagem de fundo */
+     margin: 0;
+    
+     background-image: linear-gradient(to bottom, transparent 0%, #504f4faa 0%), url(/assets/fundo_landingpage_original.jpg);
+ 
+     background-size: cover;
+     
+     background-repeat: no-repeat;
+     
+ }
+}
 #bt_login{
     border-radius: 10px ;
     width: 5%;
