@@ -1,9 +1,23 @@
+:root{
+    --azul-escuro-fundo: #1F264B;
+
+    /* só pra gente poder mudar a cor do texto aqui */
+    --texto-claro: #FFFFFF;
+    --texto-escuro: #000000;
+
+    /* cores dos botões */
+    --roxo-claro: #b18bee;
+    --roxo: #915CE7;
+    --roxo-escuro: #5e4a7e;
+
+    
+}
+
 @font-face { /* Adicionando a fonte Montserrat */
     font-family: Montserrat;
     src: url(../fontes/Montserrat-VariableFont_wght.ttf);
 
 }
-
 
 * {
 
@@ -33,21 +47,21 @@ body {
     transform: translate(-50%, 0%);
 }
   /******************************/
- /*          HEADER            */
+ /*          NAV               */
 /******************************/
 
-header {
+nav {
     z-index: 2;
     position: fixed;
     display: flex;
     align-items: center;
-    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DO HEADER NO MEIO */
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DA NAVBAR NO MEIO */
     padding: 1vh;
     width: 100%;
     background-color: #292944;
 }
 
-header a {
+nav a {
 
     color: white;
     text-decoration: none;
@@ -56,13 +70,13 @@ header a {
     font-size: 2vh;
 
 }
-header a:hover{
+nav a:hover{
     transition: 0.6;
     color:#939BE2;
 
 }
 
-header img {
+nav img {
     height: 19%;
     width: 14%;
     object-fit: fill;
