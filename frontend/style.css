@@ -1,4 +1,5 @@
-:root{
+/********************** SETUP ************************/
+:root {
     --azul-escuro-fundo: #1F264B;
 
     /* só pra gente poder mudar a cor do texto aqui */
@@ -6,14 +7,15 @@
     --texto-escuro: #000000;
 
     /* cores dos botões */
-    --roxo-claro: #b18bee;
-    --roxo: #915CE7;
-    --roxo-escuro: #5e4a7e;
+    --roxo-claro: #ba8fff;
+    --roxo: #8f49ff;
+    --roxo-escuro: #5625a5;
 
-    
+
 }
 
-@font-face { /* Adicionando a fonte Montserrat */
+@font-face {
+    /* Adicionando a fonte Montserrat */
     font-family: Montserrat;
     src: url(../fontes/Montserrat-VariableFont_wght.ttf);
 
@@ -33,33 +35,87 @@ body {
     min-height: 100%;
     margin: 0;
     background-color: #f1f2ea;
-    
+
 }
 
-.center-vertical{
+main {
+    display: flex;
+}
+
+/*****************************************************/
+
+/********************* BOTÕES ************************/
+.btn-primario {
+
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--texto-claro);
+    /* cor da fonte */
+    background-color: var(--roxo);
+    /* cor customizada localizada no style.css, dá uma olhada lá */
+    text-align: center;
+    border: none;
+    transition: 0.1s;
+}
+
+.btn-primario:hover {
+
+    background-color: var(--roxo-claro);
+    color: var(--texto-claro);
+
+}
+
+.btn-primario:active {
+    background-color: var(--roxo-escuro);
+    color: var(--texto-claro);
+
+}
+
+/*****************************************************/
+
+/****************** CENTRALIZADOR ********************/
+
+.center-vertical {
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
 }
-.center-horizontal{
+
+.center-horizontal {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
 }
-  /******************************/
- /*          NAV               */
-/******************************/
 
+/*****************************************************/
+
+/******************** NAVBAR *************************/
 nav {
     z-index: 2;
     position: fixed;
     display: flex;
     align-items: center;
     /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DA NAVBAR NO MEIO */
-    padding: 1vh;
+    padding: 20px;
     width: 100%;
-    background-color: #292944;
+    
 }
+
+.nav-transparente{
+    background-color: rgba(255,255,255,0);
+}
+.nav-primaria{
+    background-color: var(--azul-escuro-fundo);
+}
+
+.lado-esquerdo{
+    margin-right: auto;
+}
+.lado-direito{
+    margin-left: auto;
+}
+
 
 nav a {
 
@@ -70,22 +126,21 @@ nav a {
     font-size: 2vh;
 
 }
-nav a:hover{
-    transition: 0.6;
-    color:#939BE2;
+
+nav a:hover {
+    transition: 0.6s;
+    color: #939BE2;
 
 }
 
-nav img {
-    height: 19%;
-    width: 14%;
+nav .logo {
+    height: 40px;
     object-fit: fill;
 }
 
+/*****************************************************/
 
-a {
-    color: #292944;
-}
+/******************** SCROLLBAR **********************/
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -99,11 +154,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     border: 3px solid white;
 }
-main{
-    display: flex;
-    flex-direction: column;
-}
 
+/*****************************************************/
+
+/********************* FOOTER ************************/
 footer {
     position: static;
     display: flex;
@@ -115,15 +169,15 @@ footer {
     background-color: #292944;
     color: #FFF;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     text-align: center;
 }
 
-.link-container{
+.link-container {
     justify-content: center;
 }
 
-.r-Social-icon{
+.r-Social-icon {
     margin-right: 1vh;
 }
 
@@ -153,3 +207,5 @@ footer {
     color: gray;
     transition: 0.3s;
 }
+
+/*****************************************************/
