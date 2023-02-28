@@ -36,7 +36,27 @@ body{
     background-color: var(--roxo-escuro)
 }
 #text_01{
-    margin-top: 10%;
+    margin-top: 25%;
     color: white;
     font-size: 20px;
+}
+#btn-cadastro{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--texto-claro); /* cor da fonte */
+    background-color: var(--roxo); /* cor customizada localizada no style.css, dá uma olhada lá */
+    text-align: center;
+    position: fixed;
+    border: none;
+    left: 2%;
+    font-size: 16px;
+    margin-top: 34%;
+    transition: 0.5s;
+}
+#btn-cadastro:hover{
+    background-color: var(--roxo-claro);
+}
+#btn-cadastro:active{
+    background-color: var(--roxo-escuro)
 }

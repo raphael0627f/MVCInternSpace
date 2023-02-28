@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* Zera tudo */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f1f2ea; 
+    
+}
+
+
+.perfil {
+    background-color: #f1f2ea;
+    padding: 10px;
+    border-radius: 4px;
+   
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.frm_cadastro {
+    box-shadow: 0px 6px 10px 1px #0000007b;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    width: 900px;
+    padding: 20px;
+}
+
+footer {
+    position: static;
+    display: flex;
+    margin-top: 100vh;
+    bottom: 0;
+    background-color: #292944;
+    color: #FFF;
+    width: 100%;
+    height: 100%;    
+    text-align: center;
+}
+.dados{
+    margin: 2vh;
+}
+
+
+
+.cartao {
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px 1px #0000007b;
+    background-color: #D9D9D9;
+    padding: 5vh 5vh 5vh 5vh;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+
+}
+.cartao h1{
+    color: rgb(41, 41, 68)
+}
+
+
+input[type=text],input[type=email],input[type=tel] {
+    background-color: #f1f2ea;
+    padding: 1.8vh;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1.5vh;
+    outline: none;
+    transition: 0.1s;
+
+}
+
+input[type=text]:hover,input[type=email]:hover,input[type=tel]:hover{
+    border-style: solid;
+    border-color: #5f5f5f;
+    border-width: 0.1vh;
+
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
+    border-style: solid;
+    border-color: #00b6ca;
+    border-width: 0.3vh;
+}
+
+/* BOTÃO PRIMÁRIO */
+.btnPrimario {
+    background-color: rgba(41, 41, 68, 1);
+    border-radius: 100px;
+    border: none;
+    padding: 1.7vh 3vh;
+    color: white;
+    font-size: 1.5vh;
+    
+}
+.btnPrimario:hover{
+    background-color: rgb(80, 80, 108);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.btnPrimario:active{
+    background-color: rgb(11, 11, 38)
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btnSecundario {
+    
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    border: none;
+    padding: 1.7vh 2vh;
+    color: rgb(122, 122, 122);
+    font-size: 1.5vh;
+
+    border-style: solid;
+    border-color: rgb(122, 122, 122);
+    border-width: 0.3vh;
+    
+}
+.btnSecundario:hover{
+    background-color: rgb(80, 80, 108);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.btnSecundario:active{
+    background-color: rgb(11, 11, 38)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
