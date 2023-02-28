@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,44 @@
     <link rel="stylesheet" href="/frontend/landing_page.css">
     <title>Home</title>
 </head>
-<body>
-    
-    <nav> <!-- a gente chama de header mas na verdade isso é uma navbar, descobri ha pouco tempo -->
-        <img src="/assets/Logo_Light.png" alt="Logo do site InternSpace">
-        <a href="/html/login.html" class="btn-primario" id="btn-login">Login</a>
-    </nav>
-<main>
-    <span id="text_01">Otimize a gestão dos estágios na sua empresa com o nosso sistema! 
-        <br>Acompanhe o desempenho dos estagiários,</br>
-        gerencie documentos e informações de forma segura e eficiente, tudo em um só lugar.</span>
 
-        <a id="btn-cadastro" class="btn-primario" href="/html/cadastro.html">cadastre-se</a>
-</main>
-    
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <!-- Lado esquerdo -->
+        <div class="lado-esquerdo">
+
+        </div>
+
+        <!-- Lado direito -->
+        <div class="lado-direito">
+            <a href="/html/login.html" class="btn-primario" id="btn-login">Login</a>
+        </div>
+
+    </nav>
+
+    <main>
+
+
+        <!-- Container da introdução -->
+        <div class="introducao">
+            <!-- Logo -->
+            <img id="logo-introducao" src="assets/Logo_Light.png">
+            <!-- Texto -->
+            <span id="texto-introducao">
+                <strong>
+                    Otimize a gestão dos estágios na sua empresa com o nosso sistema! Acompanhe o desempenho dos
+                    estagiários, gerencie documentos e informações de forma segura e eficiente, tudo em um só lugar.
+                </strong>
+            </span>
+            <!-- Botão de cadastro -->
+            <a id="btn-cadastro" class="btn-primario" href="/html/cadastro.html">Cadastre-se</a>
+        </div>
+
+
+    </main>
+
 </body>
+
 </html>

@@ -1,58 +1,52 @@
-html{
+html {
     /* impedindo a barra de scroll de aparecer*/
     overflow-x: hidden;
     overflow-y: hidden;
 }
-body{
-     /* adicionando imagem de fundo */
-     margin: 0;
-    
-     background-image: url(/assets/fundo_landingpage_borrado.jpg);
- 
-     background-size: cover;
-     
-     background-repeat: no-repeat;
-     
- }
 
+body {
+    /* adicionando imagem de fundo */
+    margin: 0;
 
-.btn-primario{
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    color: var(--texto-claro); /* cor da fonte */
-    background-color: var(--roxo); /* cor customizada localizada no style.css, dá uma olhada lá */
-    text-align: center;
-    border: none;
-    transition: 0.5s;
+    background-image: url(/assets/fundo_landingpage_borrado.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
 }
 
-.btn-primario:hover{
-    background-color: var(--roxo-claro);
-}
-.btn-primario:active{
-    background-color: var(--roxo-escuro)
-}
-
-
-#btn-login{
+#btn-login {
 
     position: relative;
-    left: 79%;
+    margin-right: 10px;
     font-size: 16px;
 
 }
 
-#text_01{
-    margin-top: 25%;
+#btn-cadastro {
+
+    font-size: 16px;
+    margin: 20px 20px;
+
+}
+
+.introducao {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 600px;
+    margin-top: 20%;
+    margin-left: 100px;
     color: white;
-    font-size: 20px;
+    
 }
-#btn-cadastro{
 
-    position: fixed;
-    left: 2%;
-    font-size: 16px;
-    margin-top: 34%;
-
+#logo-introducao{
+    height: 100px;
+}
+#texto-introducao{
+    font-size: 20px;
+    margin-left: 20px;
 }
