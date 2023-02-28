@@ -26,6 +26,7 @@ body {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .frm_cadastro {
@@ -75,7 +76,7 @@ footer {
 input[type=text],input[type=email],input[type=tel] {
     background-color: #f1f2ea;
     padding: 1.8vh;
-    border-radius: 50px;
+    border-radius: 0.25rem;
     border: none;
     font-size: 1.5vh;
     outline: none;
@@ -138,9 +139,7 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
 .btnSecundario:active{
     background-color: rgb(11, 11, 38)
 }
-.form-row{
-    border-radius: 200px !important;
-}
+
 
 
 
