@@ -1,6 +1,6 @@
 <?php
     $servername = "greenlight.dev.br";
-    $username = "hjjyaccv";
+    $username = "hjjyaccv_hjjyaccv";
     $password = "w2Z:s7;9BYDyi5";
     $dbname = "hjjyaccv_internspace";
     try {
