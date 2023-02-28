@@ -35,6 +35,8 @@ body {
     border-radius: 20px;
     width: 900px;
     padding: 20px;
+        margin-top: 15vh;
+
 }
 
 footer {
@@ -63,8 +65,8 @@ footer {
     box-shadow: 0px 6px 10px 1px #0000007b;
     background-color: #D9D9D9;
     padding: 5vh 5vh 5vh 5vh;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 0.1vh;
     border-radius: 15px;
 
 }
@@ -75,7 +77,7 @@ footer {
 
 input[type=text],input[type=email],input[type=tel] {
     background-color: #f1f2ea;
-    padding: 1.8vh;
+    padding: 1.0vh;
     border-radius: 0.25rem;
     border: none;
     font-size: 1.5vh;
@@ -87,7 +89,7 @@ input[type=text],input[type=email],input[type=tel] {
 input[type=text]:hover,input[type=email]:hover,input[type=tel]:hover{
     border-style: solid;
     border-color: #5f5f5f;
-    border-width: 0.1vh;
+    border-width: -0.1vh;
 
 }
 
