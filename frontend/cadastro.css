@@ -77,7 +77,7 @@ footer {
 
 input[type=text],input[type=email],input[type=tel] {
     background-color: #f1f2ea;
-    padding: 1.0vh;
+    padding: 1vh;
     border-radius: 0.25rem;
     border: none;
     font-size: 1.5vh;
