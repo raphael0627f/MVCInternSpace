@@ -8,7 +8,7 @@ body {
     /* adicionando imagem de fundo */
     margin: 0;
 
-    background-image: url(/assets/fundo_landingpage_borrado.jpg);
+    background-image: url("../assets/fundo_landingpage_borrado.jpg");
 
     background-size: cover;
 
