@@ -1,5 +1,5 @@
 <?php
-    $servername = "greenlight.dev.br/cpanel";
+    $servername = "greenlight.dev.br";
     $username = "hjjyaccv_hjjyaccv";
     $password = "w2Z:s7;9BYDyi5";
     $dbname = "hjjyaccv_internspace";
