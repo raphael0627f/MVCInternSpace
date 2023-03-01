@@ -101,7 +101,3 @@ button, #confirmar {
     color: #00b6ca;
 
 }
-main{
-    display: flex;
-    flex-direction: column;
-}

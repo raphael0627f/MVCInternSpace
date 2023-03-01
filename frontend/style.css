@@ -99,6 +99,7 @@ nav {
     /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DA NAVBAR NO MEIO */
     padding: 20px;
     width: 100%;
+    background-color:#1F264B ;
     
 }
 
@@ -164,7 +165,7 @@ footer {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 40%;
     bottom: 0;
     background-color: #292944;
     color: #FFF;

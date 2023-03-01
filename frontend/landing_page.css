@@ -50,3 +50,14 @@ body {
     font-size: 20px;
     margin-left: 20px;
 }
+#nav-index {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* ^^^^ ESSA LINHA CENTRALIZA TODOS OS ITENS DA NAVBAR NO MEIO */
+    padding: 20px;
+    width: 100%;
+    
+    
+}

@@ -57,7 +57,7 @@ footer {
 
 
 .cartao {
-    position: relative;
+    position: fixed;
     display: flex;
     width: 50%;
     flex-direction: column;
