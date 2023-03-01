@@ -1,7 +1,5 @@
 
 
-
-
 body {
     /* adicionando imagem de fundo */
     margin: 0;
@@ -100,4 +98,8 @@ button, #confirmar {
     transition: 0.1;
     color: #00b6ca;
 
+}
+main{
+    display: flex;
+    flex-direction: column;
 }
