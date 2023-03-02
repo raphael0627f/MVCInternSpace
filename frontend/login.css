@@ -59,7 +59,7 @@ input {
 
 }
 
-button, #confirmar {
+#confirmar {
     position: fixed;
     left: 25%;
     background-color: rgba(41, 41, 68, 1);
@@ -88,18 +88,10 @@ button, #confirmar {
     margin-top: 6vh;
     position: fixed;
     left: 35%;
-    top: 70%;
-    
-
-    /* Achei melhor remover o text-decoration pro usuário notar que é um botão, tava meio difícil perceber */
-    
+    top: 70%;    
 }
 .esq-a-senha:hover{
     transition: 0.1;
     color: #00b6ca;
 
-}
-main{
-    display: flex;
-    flex-direction: column;
 }
