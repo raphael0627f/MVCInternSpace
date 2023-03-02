@@ -4,13 +4,17 @@ require_once('./models/Client.php');
 
 
    class clientsController{
-    private $modal;
+    private $model;
 
     function __construct()
         {
-            $this->modal = '';
+            $this->model = new clientModel();
         }
 
-}
+        function getAll(){
+            $resultData = $this -> model ->getAll();
+            print_r($resultData);
 
+     }
+   }
 ?>
