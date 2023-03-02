@@ -12,7 +12,7 @@ $dbname = "capacitar";
     $this ->connectDatabase();
    }
    function connectDatabase(){
-    global $servername, $username, $password, $dbname;
+    global $servername, $username, $password, $dbname; //pega as variaveis que estão fora da classe 
   try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
