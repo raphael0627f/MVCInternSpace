@@ -1,6 +1,6 @@
 <?php
 
-require_once('./models/Client.php');
+require_once('../models/Client.php');
 
 
    class clientsController{
@@ -14,6 +14,8 @@ require_once('./models/Client.php');
         function getAll(){
             $resultData = $this -> model ->getAll();
             print_r($resultData);
+            return $resultData; 
+            require_once ('./views/index.php');
 
      }
    }

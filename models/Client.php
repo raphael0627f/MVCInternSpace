@@ -1,5 +1,5 @@
 <?php
-require_once('./configuration/conn.php');
+require_once('../configuration/conn.php');
  class clientModel extends conn {
     private $table;
 

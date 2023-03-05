@@ -1,6 +1,6 @@
 <?php
 
-require_once ('./controllers/clientContorller.php');
+require_once ('../controllers/clientContorller.php');
 
     $controller = new clientsController;
 
