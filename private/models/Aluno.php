@@ -1,6 +1,31 @@
 <?php
 
 class Aluno extends Model{
+
+    protected $colunas = [
+        'nome',
+        'email',
+        'senha',
+        'dataNascimento',
+        'genero',
+        'telefone',
+        'cpf',
+        'documento',
+        'cep',
+        'logradouro',
+        'numero',
+        'complemento',
+        'bairro',
+        'cidade',
+        'uf'
+    ];
+
+    protected $antesInserir = [
+        'hash_password'
+    ];
+
+    protected $table;
+    
     public function validate($DATA){
         //$this->$errors = array();
 
@@ -20,6 +45,12 @@ class Aluno extends Model{
             return true;
         }
     }
+
+    public function hash_password($data){
+        $data['senha'] = password_hash($_POST['password'],PASSWORD_DEFAULT);
+        return $data;
+    }
+    
 }
 
 ?>

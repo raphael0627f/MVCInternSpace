@@ -1,6 +1,7 @@
 <?php
 
 class Model extends Database{
+    
     public $errors = array();
     
     public function __construct(){
@@ -25,6 +26,21 @@ class Model extends Database{
     }
 
     public function insert($data){
+        
+        if(property_exists($this, 'colunas')){
+            foreach($data as $key=>$coluna){
+                if(!in_array($key, $this->colunas)){
+                    unset($data[$key]);
+                }
+            }
+        }  
+        
+        if(property_exists($this, 'antesInserir')){
+            foreach($this->antesInserir as $func){
+                $data = $this->$func($data);
+            }
+        }   
+
         $keys = array_keys($data);
         $columns = implode(',', $keys);
         $values = implode(',:', $keys);

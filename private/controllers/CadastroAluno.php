@@ -9,7 +9,7 @@ class CadastroAluno extends Controller{
                 
                 $arr['nome'] = $_POST['nome'];
                 $arr['email'] = $_POST['email'];
-                $arr['senha'] = password_hash($_POST['password'],PASSWORD_DEFAULT);
+                $arr['senha'] = $_POST['password'];
                 $arr['dataNascimento'] = $_POST['dtnascimento'];
                 $arr['genero'] = $_POST['genero'];
                 $arr['telefone'] = $_POST['telefone'];
