@@ -7,7 +7,6 @@ class CadastroAluno extends Controller{
             $aluno = new Aluno();
             if($aluno->validate($_POST)){
                 $this->redirect('login');
-                
             }else{
                 $errors = $aluno->errors;
             }

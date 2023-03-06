@@ -1,7 +1,9 @@
-<?php $this->view('includes/header'); ?>
+<?php //$this->view('includes/header'); ?>
 <?php $this->view('includes/nav'); ?>
 <link rel="stylesheet" type="text/css" href="../public/assets/css/cadastroAluno.css">
 
+
+<?php  print_r($errors); ?>
 <body>
   <main>
     <div class="container">

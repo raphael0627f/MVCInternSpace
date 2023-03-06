@@ -2,9 +2,9 @@
 
 class Aluno extends Model{
     public function validate($DATA){
-        $this->$errors = array();
+        //$this->$errors = array();
 
-        if(empty($DATA['nome']) || !preg_match('/^[a-zA-z]+$/', $DATA['nome'])){
+        if(empty($DATA['nome']) || !preg_match('/^[a-zA-Z]+$/', $DATA['nome'])){
             $this->errors['nome']="ESTE CAMPO SÓ ACEITA LETRAS";
         }
 
