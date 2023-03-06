@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid white;
 }
 
-header {
+nav {
     position: fixed;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ header {
     z-index: 1;
 }
 
-header a {
+nav a {
 
     color: var(--lavanda);
     text-decoration: none;
@@ -69,13 +69,13 @@ header a {
     font-size: 2vh;
 
 }
-header a:hover{
+nav a:hover{
     transition: 0.6;
     color:white;
 
 }
 
-header img {
+nav img {
     height: 19%;
     width: 14%;
     object-fit: fill;
