@@ -27,12 +27,8 @@
             <!-- Botão de cadastro -->
             <a id="btn-cadastro" class="btn-primario" href="cadastroAluno">Cadastre-se</a>
         </div>
-        <?php
-            echo"<pre>";
-            print_r($rows);
-        ?>
+       
     </main>
 
 </body>
 
-<?php $this->view('includes/footer'); ?>
