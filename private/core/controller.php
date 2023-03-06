@@ -19,7 +19,7 @@ class Controller{
     }
 
     public function redirect($link){
-        header("Location:", "../public/view/".trim($link, "/"));
+        header("Location:" . "../public/".trim($link, "/"));
         die;
     }
 }
