@@ -10,7 +10,7 @@ class Login extends Controller{
                 $row = $row[0];
                 if(password_verify($_POST['senha'],$row->senha)){
                     Auth::authenticate($row);
-                    $this->redirect('/cadastroAluno');
+                    $this->redirect('/painel');
                 }
                 $errors['email'] = "LOGIN INVALIDO";
             }

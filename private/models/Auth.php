@@ -24,6 +24,15 @@ class Auth{
         return false;
     }
 
+    public static function __callStatic($method, $params){
+        $prop = strtolower(str_replace("get","",$method));
+        
+        if(isset($_SESSION['logado']->$prop)){
+            return $_SESSION['logado']->$prop;
+        }
+        return 'Un rere boi';
+    }
+
 }
 
 
