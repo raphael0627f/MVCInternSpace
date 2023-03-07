@@ -1,76 +1,67 @@
 <?php
 
 class Model extends Database{
-    
-    public $errors = array();
-    
+    protected $table;
+    public $errors = [];
+
     public function __construct(){
-        if(!property_exists($this, 'table')){
-            $this->table = strtolower("tb_".$this::class);
-        }    
+
+        if(!$this->table){
+            $this->table = strtolower("tb_" . get_class($this));
+        }
     }
 
-    public function where($column, $value){
-        $column = addslashes($column);
-        $query = "SELECT * FROM $this->table WHERE $column = :value";
-        
-        return $this->query($query, [
-            'value'=>$value
-        ]);
+    public function where(string $column, $value){
+        $query = "SELECT * FROM {$this->table} WHERE $column = :value";
+        return $this->query($query, ['value' => $value]);
     }
 
     public function findAll(){
-        $query = "SELECT * FROM $this->table";
-
+        $query = "SELECT * FROM {$this->table}";
         return $this->query($query);
     }
 
-    public function insert($data){
-        
+    public function insert(array $data){
         if(property_exists($this, 'colunas')){
-            foreach($data as $key=>$coluna){
+            foreach($data as $key=>$value){
                 if(!in_array($key, $this->colunas)){
                     unset($data[$key]);
                 }
             }
-        }  
-        
+        }
+
         if(property_exists($this, 'antesInserir')){
             foreach($this->antesInserir as $func){
                 $data = $this->$func($data);
             }
-        }   
+        }
 
         $keys = array_keys($data);
         $columns = implode(',', $keys);
-        $values = implode(',:', $keys);
+        $values = ':' . implode(',:', $keys);
 
-        $query = "INSERT INTO $this->table ($columns) VALUES (:$values)";
-
+        $query = "INSERT INTO {$this->table} ($columns) VALUES ($values)";
         return $this->query($query, $data);
     }
 
-    public function update($id, $data){
-        $str = "";
-        
-        foreach($data as $key=>$value){
-            $str .= $key . "=:" . $key . ",";
+    public function update(int $id, array $data){
+        $str = '';
+        $params = ['id' => $id];
+
+        foreach($data as $key => $value){
+            $str .= $key . '=:' . $key . ',';
+            $params[$key] = $value;
         }
-    
-        $str = trim($str, ",");
-        $data['id'] = $id;
 
-        $query = "UPDATE $this->table SET $str WHERE id=:id;";
+        $str = rtrim($str, ',');
 
-        return $this->query($query, $data);
-    }    
-    
-    public function delete($id){
-        $data['id']=$id;
+        $query = "UPDATE {$this->table} SET $str WHERE id=:id";
+        return $this->query($query, $params);
+    }
 
-        $query = "DELETE FROM $this->table WHERE id=:id";
-
-        return $this->query($query, $data);
+    public function delete(int $id){
+        $query = "DELETE FROM {$this->table} WHERE id=:id";
+        return $this->query($query, ['id' => $id]);
     }
 }
 

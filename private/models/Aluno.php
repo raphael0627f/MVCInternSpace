@@ -23,8 +23,6 @@ class Aluno extends Model{
     protected $antesInserir = [
         'hash_password'
     ];
-
-    protected $table;
     
     public function validate($DATA){
         //$this->$errors = array();
