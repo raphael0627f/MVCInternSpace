@@ -8,9 +8,9 @@
             <!-- Form-->
             <form action="../backend/login/login.php" method="post">
                 <span id="login-h1">Login</span>
-                <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
+                <input name="email" id="input-e-mail" <?=get_var('email')?> type="email" placeholder="e-mail" required>
                 <br>
-                <input name="senha" id="input-senha" type="password" placeholder="Senha" required>
+                <input name="senha" id="input-senha" <?=get_var('password')?>type="password" placeholder="Senha" required>
                 <br>
                 <div class="container-botoes">
                     <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
