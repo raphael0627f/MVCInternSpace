@@ -41,6 +41,11 @@ body {
   width: 80px;
 }
 
+.logo {
+  height: 40px;
+  object-fit: fill;
+}
+
 .navigation ul {
   position: absolute;
   top: 0;

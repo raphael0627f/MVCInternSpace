@@ -21,6 +21,11 @@
 
 }
 
+#center{
+    display: flex;
+    background-color: #000000;
+}
+
 * {
 
     font-family: 'Montserrat';
@@ -112,7 +117,7 @@ nav {
 }
 
 .lado-esquerdo{
-    margin-right: auto;
+    margin-right: 50%;
 }
 
 .lado-direito{
