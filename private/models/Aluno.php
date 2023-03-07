@@ -39,6 +39,10 @@ class Aluno extends Model{
             $this->errors['password']="A SENHA TEM QUE TER NO MINIMO 8 CARACTERES";
         }
 
+        if($this->where('email', $DATA['email'])){
+            $this->errors['password']="EMAIL JA CADASTRADO";
+        }
+
         if(count($this->errors)==0){
             return true;
         }
