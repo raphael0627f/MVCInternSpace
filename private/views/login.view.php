@@ -6,14 +6,20 @@
     <main>
         <div class="cartao">
             <!-- Form-->
-            <form action="../backend/login/login.php" method="post">
-                <span id="login-h1">Login</span>
-                <input name="email" id="input-e-mail" type="email" placeholder="e-mail" required>
-                <br>
-                <input name="senha" id="input-senha" type="password" placeholder="Senha" required>
-                <br>
+            <form action="" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <span id="login-h1">Login</span>
+                        <input name="email" id="input-e-mail" value="<?= get_var('email') ?>" class="form-control" type="email" placeholder="e-mail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <input name="senha" id="input-senha" value="<?= get_var('senha') ?>" class="form-control" type="password" placeholder="Senha" required>
+                    </div>
+                </div>
                 <div class="container-botoes">
-                    <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
+                    <button type="submit" class="btn btn-primary" id="a">Confirmar</button>
                     <a href="esq-a-senha.html" class="esq-a-senha">Esqueceu a senha?</a>
                 </div>
             </form>

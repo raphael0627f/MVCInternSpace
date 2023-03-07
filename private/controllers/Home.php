@@ -2,12 +2,12 @@
 
 class Home extends Controller{
     function index(){
-
-        $aluno = new Aluno();
-
-        $data = $aluno->findAll();
+        /*
+        if(!Auth::loggedin()){
+            $this->redirect('login');
+        }*/
         
-        $this->view('home', ['rows'=>$data]);    
+        $this->view('home');    
     }
 }
 

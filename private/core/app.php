@@ -3,7 +3,7 @@
 class App{
     protected $controller = "home";
     protected $method = "index";
-    protected $params = array();
+    protected $params = [];
 
     public function __construct(){
         $URL = $this->getURL();

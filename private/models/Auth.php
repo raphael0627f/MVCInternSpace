@@ -1,16 +1,25 @@
 <?php
 class Auth{
-    public function authenticate($row){
-        $_SESSION['aluno']=$row;
+    public static function authenticate($row){
+        $_SESSION['logado']=$row;
     }
-    public function logout (){
-        if(isset($_SESSION['aluno'])){
-           unset($_SESSION['aluno']);
+
+    public static function logout (){
+        if(isset($_SESSION['logado'])){
+           unset($_SESSION['logado']);
         }
     }
-    public function loggedin(){
-        if(isset($_SESSION['aluno'])){
+
+    public static function loggedin(){
+        if(isset($_SESSION['logado'])){
             return true;
+        }
+        return false;
+    }
+
+    public static function aluno(){
+        if(isset($_SESSION['logado'])){
+            return $_SESSION['logado']->nome;
         }
         return false;
     }

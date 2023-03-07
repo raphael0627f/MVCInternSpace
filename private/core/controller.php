@@ -1,7 +1,7 @@
 <?php
 
 class Controller{
-    public function view($view, $data = array()){
+    public function view($view, $data = []){
         extract($data);
         if(file_exists("../private/views/".$view.".view.php")){
            return require("../private/views/".$view.".view.php");

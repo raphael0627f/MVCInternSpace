@@ -22,13 +22,13 @@
 
             <div class="form-group col-md-3">
               <label>Senha</label>
-              <input type="password" value="<?= get_var('password') ?>" name="password" class="form-control" placeholder="Senha">
+              <input type="password" value="<?= get_var('senha') ?>" name="senha" class="form-control" placeholder="Senha">
               
             </div>
 
             <div class="form-group col-md-3">
               <label>Confirmação da Senha</label>
-              <input type="password" value="<?= get_var('password2') ?>" name="password2" class="form-control" placeholder="Senha">
+              <input type="password" value="<?= get_var('senha2') ?>" name="senha2" class="form-control" placeholder="Senha">
               
             </div>
           </div>
@@ -37,7 +37,7 @@
 
             <div class="form-group col-md-3">
               <label>Data de Nascimento</label>
-              <input type="date" class="form-control" value="<?= get_var('dtnascimento') ?>" name="dtnascimento" placeholder="Data de Nascimento">
+              <input type="date" class="form-control" value="<?= get_var('dataNascimento') ?>" name="dataNascimento" placeholder="Data de Nascimento">
             </div>
 
             <div class="form-group col-md-3">

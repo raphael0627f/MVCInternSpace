@@ -31,11 +31,11 @@ class Aluno extends Model{
             $this->errors['nome']="ESTE CAMPO SÓ ACEITA LETRAS";
         }
 
-        if(empty($DATA['password']) || $DATA['password'] != $DATA['password2']){
+        if(empty($DATA['senha']) || $DATA['senha'] != $DATA['senha2']){
             $this->errors['password']="AS SENHAS NÃO CORRESPONDEM";
         }
 
-        if(strlen($DATA['password']) <= 7){
+        if(strlen($DATA['senha']) <= 7){
             $this->errors['password']="A SENHA TEM QUE TER NO MINIMO 8 CARACTERES";
         }
 

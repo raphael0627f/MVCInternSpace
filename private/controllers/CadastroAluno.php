@@ -2,11 +2,11 @@
 
 class CadastroAluno extends Controller{
     function index(){
-        $errors = array();
+        $errors = [];
         if(count($_POST)>0){
             $aluno = new Aluno();
             if($aluno->validate($_POST)){
-                
+               /* 
                 $arr['nome'] = $_POST['nome'];
                 $arr['email'] = $_POST['email'];
                 $arr['senha'] = $_POST['password'];
@@ -21,9 +21,9 @@ class CadastroAluno extends Controller{
                 $arr['complemento'] = $_POST['complemento'];
                 $arr['bairro'] = $_POST['bairro'];
                 $arr['cidade'] = $_POST['cidade'];
-                $arr['uf'] = $_POST['uf'];
+                $arr['uf'] = $_POST['uf'];*/
 
-                $aluno->insert($arr);
+                $aluno->insert($_POST);
 
                 $this->redirect('login');
             }else{
