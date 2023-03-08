@@ -18,6 +18,7 @@ body {
     height: 100%;
 }
 #login-h1{
+    color: var(--texto-claro);
     font-size: 3vh;
     font-weight: bolder;
     margin: 10vh 0vh;
@@ -35,7 +36,7 @@ body {
 
     box-sizing: border-box;
     box-shadow: 0px 6px 10px 1px #0000007b;
-    background-color: #D9D9D9;
+    background-color: var(--azul-escuro-fundo);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,11 +47,15 @@ body {
     border-radius: 15px;
 
 }
+.cartao::placeholder{
+    color: var(--azul-escuro-fundo);
+
+}
 
 input {
 
     width: 89%;
-
+    background-color: var(--azul-desbotado-fundo);
     margin-top: 3vh;
     padding: 2vh;
     border-radius: 20px;

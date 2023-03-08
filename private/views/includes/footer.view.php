@@ -1,25 +1,24 @@
         <!-- Footer -->
         <footer>
             <div class="footer-container">
-                <img src="../assets/logo-educac-amarelo.png" alt="Fundação CSN" id="imgPhoto-footer">
+                <ul class="footer-list">
+                    <li><img style="height: 40px;" src="./assets/img/Logo_Light.png"></li>
+                </ul>
             </div>
             <div class="footer-container">
-                <ul id="t-footer">CONTATO</ul>
-                <ul>fundacao@csn.com.br</ul>
+                <div class="footer-title">REDES SOCIAIS</div>
+                <ul class="footer-list">
+                    <li><img class="footer-icon" src="./assets/img/twitter.png"><a href="https://twitter.com/intern_space">@intern_space</a></li>
+                    <li><img class="footer-icon" src="./assets/img/instagram.png"><a href="https://www.instagram.com/intern_space/">@intern_space</a></li>
+                </ul>
             </div>
             <div class="footer-container">
-                <div>
-                    <ul id="t-footer">REDES SOCIAIS</ul>
-                </div>
-
-                <div class="link-container">
-                    <ul><img class="r-Social-icon" src="../assets/Instagram.svg" style="height: 2.5vh;"><a id="r-Social" href="https://www.instagram.com/fundacaocsn/" target="_blank">Instagram</a></ul>
-                </div>
-                <div class="link-container">
-                    <!--target blank faz abrir em nova guia"-->
-                    <ul><img class="r-Social-icon" src="../assets/Facebook.svg" style="height: 2.5vh;"><a id="r-Social" href="https://www.facebook.com/fundacaocsn/" target="_blank">Facebook</a></ul>
-                </div>
+                <div class="footer-title">CONTATO</div>
+                <ul class="footer-list">
+                    <li><img class="footer-icon" src="./assets/img/gmail.png">internspace.site@gmail.com</li>
+                </ul>
             </div>
         </footer>
-    </body>
-</html>
+        </body>
+
+        </html>

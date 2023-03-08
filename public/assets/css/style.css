@@ -1,6 +1,7 @@
 /********************** SETUP ************************/
 :root {
     --azul-escuro-fundo: #1F264B;
+    --azul-desbotado-fundo: #8893c7;
 
     /* só pra gente poder mudar a cor do texto aqui */
     --texto-claro: #FFFFFF;
@@ -40,6 +41,13 @@ body {
 
 main {
     display: flex;
+}
+
+a{
+    color: var(--roxo-claro);
+}
+a:hover{
+    color: var(--roxo);
 }
 
 /*****************************************************/
@@ -160,53 +168,35 @@ body::-webkit-scrollbar-thumb {
 
 /********************* FOOTER ************************/
 footer {
-    position: static;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    margin-top: 40%;
-    bottom: 0;
-    background-color: #292944;
-    color: #FFF;
+    position: absolute;
+    padding: 30px;
+    background-color: var(--azul-escuro-fundo);
+    color: var(--texto-claro);
+    top: 100%;
     width: 100%;
-    height: 100%;
-    text-align: center;
+    justify-content: space-between;
 }
-
-.link-container {
+.footer ul{
+    display: flex;
+    padding-inline-start: 0px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-
-.r-Social-icon {
-    margin-right: 1vh;
+.footer-title{
+    font-weight: bold;
 }
-
-#imgPhoto-footer {
-    margin-top: 1.5vh;
-    width: 20vh;
-}
-
-#meio-footer {
-    margin-left: 50vh;
-}
-
-#dir-footer {
-    margin-left: 50vh;
-}
-
-#t-footer {
-    color: #edb700;
-}
-
-#r-Social {
-    text-decoration: none;
-    color: white;
-}
-
-#r-Social:hover {
-    color: gray;
-    transition: 0.3s;
+.footer-list{
+    list-style: none;
+} 
+.footer-icon{
+    height: 1.5rem;
+    margin-right: 10px;
 }
 
 /*****************************************************/

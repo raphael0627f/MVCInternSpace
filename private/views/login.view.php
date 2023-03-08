@@ -10,12 +10,12 @@
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <span id="login-h1">Login</span>
-                        <input name="email" id="input-e-mail" value="<?= get_var('email') ?>" class="form-control" type="email" placeholder="e-mail" required>
+                        <input name="email" id="input-e-mail" value="<?= get_var('email') ?>" type="email" placeholder="e-mail" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                        <input name="senha" id="input-senha" value="<?= get_var('senha') ?>" class="form-control" type="password" placeholder="Senha" required>
+                        <input name="senha" id="input-senha" value="<?= get_var('senha') ?>" type="password" placeholder="Senha" required>
                     </div>
                 </div>
                 <div class="container-botoes">
